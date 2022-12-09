@@ -9,7 +9,7 @@ export default function Home() {
 				<title>Vibes DIY Studio</title>
 				<meta
 					name='description'
-					content='Vibes DIY Studio » The creative place coming to Centennial Hills in Las Vegas'
+					content='Vibes DIY Studio » The new creative place coming to Centennial Hills in Las Vegas'
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
