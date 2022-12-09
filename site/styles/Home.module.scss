@@ -10,9 +10,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 2rem;
+  padding: 1rem;
   article {
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,6 +22,7 @@
     }
 	img {
 		filter: drop-shadow(0 0 8px rgb(0 0 0 / 0.4));
+		width: 100%;
 	}
     p {
       color: white;
