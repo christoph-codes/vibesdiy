@@ -11,6 +11,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 1rem;
+  box-sizing: border-box;
   article {
     width: 95%;
     display: flex;
@@ -19,6 +20,7 @@
     align-items: center;
     h1 {
       text-indent: -9999999px;
+	  height: 0;
     }
 	img {
 		filter: drop-shadow(0 0 8px rgb(0 0 0 / 0.4));
