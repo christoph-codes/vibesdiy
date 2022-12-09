@@ -1,0 +1,41 @@
+.ComingSoon {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  background-image: url('/bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  article {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      text-indent: -9999999px;
+      width: 100%;
+      max-width: 500px;
+      height: 230px;
+      background-image: url('/logo_white.svg');
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      @media(max-width: 375px) {
+        height: 150px;
+      }
+    }
+    p {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px rgba(0 0 0 / 80);
+    }
+  }
+}
