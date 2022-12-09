@@ -7,8 +7,8 @@ const colors = {
 			hover: "#FF545B",
 		},
 		secondary: {
-			default: "279546",
-			hover: "40BC63",
+			default: "#279546",
+			hover: "#40BC63",
 		},
 		tertiary: {
 			default: "#FCD504",
