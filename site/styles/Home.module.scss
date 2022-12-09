@@ -19,17 +19,10 @@
     align-items: center;
     h1 {
       text-indent: -9999999px;
-      width: 100%;
-      max-width: 500px;
-      height: 230px;
-      background-image: url('/logo_white.svg');
-      background-position: center;
-      background-size: 100%;
-      background-repeat: no-repeat;
-      @media(max-width: 375px) {
-        height: 150px;
-      }
     }
+	img {
+		filter: drop-shadow(0 0 8px rgb(0 0 0 / 0.4));
+	}
     p {
       color: white;
       font-size: 24px;
