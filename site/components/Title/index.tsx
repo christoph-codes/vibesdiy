@@ -33,8 +33,8 @@ const Title = ({
 	...rest
 }: ITitleProps) => {
 	return (
-		<div>
-			{eyebrow && header === "h2" && (
+		<Box marginBottom={4}>
+			{eyebrow && (header === "h2" || header === "h1") && (
 				<Box
 					bg={`brand.${eyebrow}.default`}
 					width="72px"
@@ -53,7 +53,7 @@ const Title = ({
 			>
 				{children}
 			</Heading>
-		</div>
+		</Box>
 	);
 };
 
