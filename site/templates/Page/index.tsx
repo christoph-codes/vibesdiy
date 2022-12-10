@@ -66,7 +66,7 @@ const PageTemplate: FC<PageProps> = ({
 			</Head>
 			{/** Announcement Bar */}
 			<AnnouncementBar>
-				<strong>NOW OPEN!</strong> 7557 Norman Rockwell Ln, Bldg 2 Suite
+				<strong>NOW OPEN!</strong> 7575 Norman Rockwell Ln, Bldg 2 Suite
 				120 | 702.123.4567
 			</AnnouncementBar>
 			{/** Header */}
