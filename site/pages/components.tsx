@@ -1,5 +1,6 @@
 import Section from "../components/Section";
 import Title from "../components/Title";
+import Logo from "../components/Logo";
 import PageTemplate from "../templates/Page";
 
 const Components = () => {
@@ -7,6 +8,11 @@ const Components = () => {
 		<>
 			<PageTemplate>
 				<Section>
+					<Logo />
+					<Logo variant="noTag" />
+					<Logo variant="light" />
+					<Logo variant="lightNoTag" />
+					<Logo variant="icon" />
 					<Title header="h1" eyebrow="primary" textAlign="left">
 						Hey Gurl, Whats Up
 					</Title>
