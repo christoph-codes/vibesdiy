@@ -1,6 +1,6 @@
 import { Text } from "@chakra-ui/react";
 import Head from "next/head";
-import Image from "next/image";
+import Logo from "../components/Logo";
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
@@ -18,12 +18,7 @@ export default function Home() {
 			<main className={styles.ComingSoon}>
 				<article>
 					<h1>Vibes DIY</h1>
-					<Image
-						width={500}
-						height={200}
-						src="/logo_white.svg"
-						alt="Vibes DIY Studio Logo"
-					/>
+					<Logo variant="white" />
 					<Text textColor="brand.white.default">
 						Website Coming Soon
 					</Text>

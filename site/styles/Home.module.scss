@@ -26,6 +26,10 @@
 	img {
 		filter: drop-shadow(0 0 8px rgb(0 0 0 / 0.4));
 		margin-bottom: 2rem;
+		max-width:80%;
+		@media(max-width: 375px) {
+			max-width: 100%;
+		}
 	}
     p {
       font-size: 24px;
