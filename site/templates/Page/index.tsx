@@ -6,7 +6,7 @@ import styles from "./Page.module.scss";
 
 export type PageProps = {
 	className?: string;
-	metaData: {
+	metaData?: {
 		title: string;
 		description: string;
 		image?: string | StaticImageData | any;
