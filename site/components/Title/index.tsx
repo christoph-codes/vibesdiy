@@ -23,6 +23,7 @@ export interface ITitleProps extends HeadingProps {
 	eyebrow?: TEyebrow | false;
 	header: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 	textAlign?: "center" | "left";
+	className?: string;
 }
 
 const Title = ({
@@ -30,10 +31,11 @@ const Title = ({
 	eyebrow,
 	header = "h1",
 	textAlign = "left",
+	className,
 	...rest
 }: ITitleProps) => {
 	return (
-		<Box marginBottom={4}>
+		<Box marginBottom={4} className={className || ""}>
 			{eyebrow && (header === "h2" || header === "h1") && (
 				<Box
 					bg={`brand.${eyebrow}.default`}
