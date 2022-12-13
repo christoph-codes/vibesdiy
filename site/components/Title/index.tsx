@@ -21,7 +21,12 @@ const headerSize = {
 export interface ITitleProps extends HeadingProps {
 	children: ReactNode;
 	eyebrow?: TEyebrow | false;
-	header: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+	h1?: boolean;
+	h2?: boolean;
+	h3?: boolean;
+	h4?: boolean;
+	h5?: boolean;
+	h6?: boolean;
 	textAlign?: "center" | "left";
 	className?: string;
 }
@@ -29,14 +34,32 @@ export interface ITitleProps extends HeadingProps {
 const Title = ({
 	children,
 	eyebrow,
-	header = "h1",
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
 	textAlign = "left",
 	className,
 	...rest
 }: ITitleProps) => {
+	const chosenHeader = h1
+		? "h1"
+		: h2
+		? "h2"
+		: h3
+		? "h3"
+		: h4
+		? "h4"
+		: h5
+		? "h5"
+		: h6
+		? "h6"
+		: "h1";
 	return (
 		<Box marginBottom={4} className={className || ""}>
-			{eyebrow && (header === "h2" || header === "h1") && (
+			{eyebrow && (chosenHeader === "h1" || chosenHeader === "h2") && (
 				<Box
 					bg={`brand.${eyebrow}.default`}
 					width="72px"
@@ -48,8 +71,8 @@ const Title = ({
 			)}
 			<Heading
 				color="brand.black.default"
-				as={header}
-				size={headerSize[header]}
+				as={chosenHeader}
+				size={headerSize[chosenHeader]}
 				textAlign={textAlign}
 				{...rest}
 			>

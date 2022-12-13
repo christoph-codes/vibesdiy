@@ -3,17 +3,34 @@ import Title from "../components/Title";
 import Logo from "../components/Logo";
 import PageTemplate from "../templates/Page";
 import NavLink from "../components/NavLink";
+import Button from "../components/Button";
+import { Flex } from "@chakra-ui/react";
 
 const Components = () => {
 	return (
 		<>
 			<PageTemplate>
 				<Section>
+					<Title h4>Button</Title>
+					<Flex>
+						<Button>Hello</Button>
+						<Button variant="primary-outline">Hello</Button>
+						<Button variant="secondary">Hello</Button>
+						<Button variant="secondary-outline">Hello</Button>
+						<Button variant="tertiary">Hello</Button>
+						<Button variant="tertiary-outline">Hello</Button>
+						<Button variant="quad">Hello</Button>
+						<Button variant="quad-outline">Hello</Button>
+						<Button variant="black">Hello</Button>
+						<Button variant="white">Hello</Button>
+					</Flex>
+					<Title h4>Logo</Title>
 					<Logo />
 					<Logo variant="noTag" />
 					<Logo variant="light" />
 					<Logo variant="lightNoTag" />
 					<Logo variant="icon" />
+					<Title h4>NavLink</Title>
 					<NavLink
 						dropdownLinks={[
 							{ label: "Hello", path: "/hello" },
@@ -26,13 +43,15 @@ const Components = () => {
 					<NavLink href="/three">Page 3</NavLink>
 					<NavLink href="/four">Page 4</NavLink>
 					<NavLink href="/five">Page 5</NavLink>
-					<Title header="h1" eyebrow="primary" textAlign="left">
+					<Title h4>Title</Title>
+
+					<Title h1 eyebrow="primary" textAlign="left">
 						Hey Gurl, Whats Up
 					</Title>
-					<Title header="h2" eyebrow="secondary" textAlign="center">
+					<Title h2 eyebrow="secondary" textAlign="center">
 						Hey Gurl, Whats Up
 					</Title>
-					<Title header="h3" eyebrow="tertiary" textAlign="center">
+					<Title h3 eyebrow="tertiary" textAlign="center">
 						Hey Gurl, Whats Up
 					</Title>
 				</Section>
