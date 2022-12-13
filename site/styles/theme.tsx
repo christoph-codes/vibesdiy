@@ -29,7 +29,7 @@ const colors = {
 	},
 };
 const fonts = {
-	body: "system-ui, sans-serif",
+	body: "Montserrat, sans-serif",
 	heading: "Montserrat, sans-serif",
 	mono: "Menlo, monospace",
 };
