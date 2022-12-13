@@ -1,19 +1,23 @@
-import Link, { LinkProps } from "next/link";
+import Link from "next/link";
 import { Box, Text } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import styles from "./NavLink.module.scss";
 import { ReactNode, useState } from "react";
 
-export interface Link {
+export interface ILink {
 	label: string;
-	path: LinkProps["href"];
+	path: string;
+	target?: HTMLAnchorElement["target"];
 }
 
 export interface INavLinkProps {
 	href?: string;
 	className?: string;
 	children: ReactNode | string;
-	dropdownLinks?: Link[];
+	dropdownLinks?: ILink[];
+	cta?: boolean;
+	target?: HTMLAnchorElement["target"];
+	onClick?: () => void;
 }
 
 const NavLink = ({
@@ -21,6 +25,9 @@ const NavLink = ({
 	className,
 	dropdownLinks,
 	children,
+	cta,
+	target,
+	...rest
 }: INavLinkProps) => {
 	const [active, setActive] = useState(false);
 	const doDropdownsExist: boolean = dropdownLinks?.length > 0;
@@ -40,10 +47,14 @@ const NavLink = ({
 				onMouseOut={() => {
 					setActive(false);
 				}}
-				className={`${styles.NavLink} ${className} ${
+				className={`${styles.NavLink} ${
+					cta ? styles.NavLink__CTA : ""
+				} ${className} ${
 					active && doDropdownsExist ? styles.NavLinkActive : ""
 				}`}
 				href={href || "#"}
+				target={target}
+				{...rest}
 			>
 				<Text as="span">
 					{children}
