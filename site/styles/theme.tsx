@@ -20,7 +20,7 @@ const colors = {
 		},
 		black: {
 			default: "#010101",
-			hover: "#1A1A1A",
+			hover: "#2a2a2a",
 		},
 		white: {
 			default: "#FFFFFF",
