@@ -9,7 +9,7 @@ export interface IContainer {
 const Container = ({ children, className }) => {
 	return (
 		<Box
-			className={className}
+			className={className || ""}
 			maxWidth="1200px"
 			width="100%"
 			marginX="auto"
