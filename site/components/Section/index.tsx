@@ -35,11 +35,7 @@ const Section: FC<ISectionProps> = ({
 	const content = (
 		<>
 			{title && (
-				<Title
-					header="h2"
-					eyebrow="primary"
-					className={styles.Section__title}
-				>
+				<Title h2 eyebrow="primary" className={styles.Section__title}>
 					{title}
 				</Title>
 			)}
