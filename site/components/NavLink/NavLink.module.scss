@@ -1,6 +1,7 @@
 .NavLink {
 	position: relative;
 	padding: 4px;
+	margin: 0 8px;
 	span {
 		font-weight: bold;
 		transition: 0.15s ease-in-out;
@@ -18,7 +19,7 @@
 	}
 	&__dropdown {
 		display: none;
-		padding: 8px;
+		padding: 12px 8px;
 		position: absolute;
 		background-color: white;
 		box-shadow: 0px 0px 10px -5px black;
