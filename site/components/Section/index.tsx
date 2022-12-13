@@ -7,7 +7,7 @@ import styles from "./Section.module.scss";
 
 export type ISectionProps = {
 	children?: ReactNode;
-	className?: string[];
+	className?: string;
 	hideContainer?: boolean;
 	bgColor?:
 		| "primary"

@@ -6,7 +6,7 @@ export interface IContainer {
 	children?: ReactNode;
 }
 
-const Container = ({ children, className }) => {
+const Container = ({ children, className }: IContainer) => {
 	return (
 		<Box
 			className={className || ""}
