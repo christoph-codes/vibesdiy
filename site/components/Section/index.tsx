@@ -1,12 +1,13 @@
 import { Box, Text } from "@chakra-ui/react";
 import { StaticImageData } from "next/image";
 import { FC, ReactNode } from "react";
+import Container from "../Container";
 import Title from "../Title";
 import styles from "./Section.module.scss";
 
 export type ISectionProps = {
 	children?: ReactNode;
-	className?: string[];
+	className?: string;
 	hideContainer?: boolean;
 	bgColor?:
 		| "primary"
@@ -61,13 +62,7 @@ const Section: FC<ISectionProps> = ({
 			}
 			{...rest}
 		>
-			{!hideContainer ? (
-				<Box maxWidth="1200px" width="100%" marginX="auto">
-					{content}
-				</Box>
-			) : (
-				content
-			)}
+			{!hideContainer ? <Container>{content}</Container> : content}
 		</Box>
 	);
 };

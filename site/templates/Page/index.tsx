@@ -4,6 +4,8 @@ import { StaticImageData } from "next/image";
 import Head from "next/head";
 import styles from "./Page.module.scss";
 import AnnouncementBar from "../../components/AnnouncementBar";
+import Navigation from "../../components/Navigation";
+import { navigationLinks } from "../../utils/navLinks";
 
 export type PageProps = {
 	className?: string;
@@ -64,11 +66,11 @@ const PageTemplate: FC<PageProps> = ({
 				<meta content="summary_large_image" name="twitter:card" />
 				<meta content={metaData.description} property="og:image:alt" />
 			</Head>
-			{/** Announcement Bar */}
 			<AnnouncementBar>
 				<strong>NOW OPEN!</strong> 7575 Norman Rockwell Ln, Bldg 2 Suite
 				120 | 702.123.4567
 			</AnnouncementBar>
+			<Navigation links={navigationLinks} />
 			{/** Header */}
 			<main className={`${styles.PageTemplate} ${className}`}>
 				{children}
