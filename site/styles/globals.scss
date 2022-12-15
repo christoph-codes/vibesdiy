@@ -13,3 +13,8 @@ a {
 * {
   box-sizing: border-box;
 }
+.LINK {
+	color: var(--chakra-colors-brand-quad-default);
+	text-decoration: underline;
+	font-weight: bold;
+}
