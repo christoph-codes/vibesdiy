@@ -66,7 +66,7 @@ const NavLink = ({
 					className={styles.NavLink__dropdown}
 					onMouseLeave={() => setActive(false)}
 				>
-					{dropdownLinks.map((link, index) => {
+					{dropdownLinks?.map((link, index) => {
 						return (
 							<SubNavigationLink
 								key={index}
