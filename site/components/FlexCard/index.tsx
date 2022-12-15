@@ -19,7 +19,7 @@ const FlexCard = ({ link, bgImage, cardColor, children }: IFlexCardProps) => {
 				bgImage={bgImage || "/paint_pour_flex_card.png"}
 				backgroundSize="cover"
 				backgroundPosition="center"
-				borderRadius={8}
+				borderRadius={16}
 				width="100%"
 			>
 				{children && (
@@ -27,8 +27,8 @@ const FlexCard = ({ link, bgImage, cardColor, children }: IFlexCardProps) => {
 						padding="4"
 						bgColor={cardColor}
 						marginBottom={0}
-						borderBottomLeftRadius={8}
-						borderBottomRightRadius={8}
+						borderBottomLeftRadius={16}
+						borderBottomRightRadius={16}
 					>
 						<Title
 							textAlign="center"
