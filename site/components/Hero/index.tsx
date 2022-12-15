@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, BoxProps } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import Section from "../Section";
 import styles from "./Hero.module.scss";
@@ -17,7 +17,8 @@ const Hero = ({
 	bgImg,
 	className,
 	containerClass,
-}: IHeroProps) => {
+	...rest
+}: IHeroProps & BoxProps) => {
 	return (
 		<Box
 			as={Section}
@@ -27,6 +28,7 @@ const Hero = ({
 			bgColor="brand.primary.default"
 			bgImage={bgImg}
 			containerClass={containerClass}
+			{...rest}
 		>
 			{children}
 		</Box>
