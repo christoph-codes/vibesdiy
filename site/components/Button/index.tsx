@@ -1,7 +1,7 @@
 import { FC, ReactElement } from "react";
 import styles from "./Button.module.scss";
 
-export type TButtonProps = {
+export interface IButtonProps {
 	className?: string;
 	children?: ReactElement | string;
 	variant?:
@@ -15,20 +15,20 @@ export type TButtonProps = {
 		| "quad-outline"
 		| "white"
 		| "black";
-	href?: "string";
+	href?: string;
 	fullWidth?: boolean;
 	rest?: any[];
-};
+}
 
-const Button: FC<TButtonProps> = ({
+const Button = ({
 	children,
 	className,
 	variant = "primary",
 	fullWidth,
 	href,
 	...rest
-}) => {
-	const Tag: "a" | "button" = href ? "a" : "button";
+}: IButtonProps) => {
+	const Tag: "a" | "button" = typeof href === "string" ? "a" : "button";
 	return (
 		<Tag
 			type={!href ? "button" : undefined}
