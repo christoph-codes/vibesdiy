@@ -58,7 +58,7 @@ const Title = ({
 		? "h6"
 		: "h1";
 	return (
-		<Box marginBottom={4} className={className || ""}>
+		<Box className={className || ""}>
 			{eyebrow && (chosenHeader === "h1" || chosenHeader === "h2") && (
 				<Box
 					bg={`brand.${eyebrow}.default`}
@@ -74,6 +74,7 @@ const Title = ({
 				as={chosenHeader}
 				size={headerSize[chosenHeader]}
 				textAlign={textAlign}
+				marginBottom={4}
 				{...rest}
 			>
 				{children}
