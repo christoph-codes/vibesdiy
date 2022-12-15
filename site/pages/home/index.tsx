@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import Button from "../../components/Button";
 import FlexCard from "../../components/FlexCard";
@@ -16,6 +16,9 @@ const Home = () => {
 				home
 				bgImg="/bg.png"
 				containerClass={styles.Home__heroContainer}
+				borderBottomColor="brand.black.default"
+				borderBottomWidth={12}
+				borderBottomStyle="solid"
 			>
 				<Title textAlign="center" color="white" textShadow="xl">
 					DIY in style
@@ -28,7 +31,7 @@ const Home = () => {
 					Book Now
 				</Button>
 			</Hero>
-			<Section marginTop="-30" paddingTop={0}>
+			<Section marginTop="-60px" paddingTop={0}>
 				<Flex justifyContent="center" columnGap="12">
 					<FlexCard cardColor="brand.primary.default">
 						Paint Pouring
@@ -57,9 +60,53 @@ const Home = () => {
 				</Text>
 				<Button href="/location">Come Visit Us</Button>
 			</Section>
-			{/** Location Call out */}
-			{/** Featured Content */}
-			{/** Book Now Section */}
+			<Section
+				bgColor="brand.quad.light"
+				containerClass={styles.Home__featured}
+			>
+				<Flex
+					justifyContent="space-around"
+					alignItems="center"
+					columnGap="64px"
+				>
+					<Box width="100%">
+						<Image src="/product_features.png" alt="Paint Pour" />
+					</Box>
+					<Box width="100%">
+						<Title
+							color="brand.quad.default"
+							h3
+						>{`Let's Get Creating`}</Title>
+						<Text>
+							{`Lorem Ipsum is simply dummy text of the printing and
+							typesetting industry. Lorem Ipsum has been the
+							industry's standard dummy text ever since the 1500s,
+							when an unknown printer took a galley of type and
+							scrambled it to make a type specimen book.`}
+						</Text>
+						<Text>
+							{`It has survived not only five centuries, but also
+							the leap into electronic typesetting, remaining
+							essentially unchanged. It was popularised in the
+							1960s with the release of Letraset sheets containing
+							Lorem Ipsum passages, and more recently with desktop
+							publishing software like Aldus PageMaker including
+							versions of Lorem Ipsum.`}
+						</Text>
+						<Button>Learn More</Button>
+					</Box>
+				</Flex>
+			</Section>
+			<Section bgImage="/book_bg.png" containerClass={styles.Home__book}>
+				<Title textAlign="center" color="white" h2>
+					Book Session Today!
+				</Title>
+				<Text marginBottom={4} fontSize={24} color="white">
+					If you are the spontaneous type, stop in today and book a
+					last minute session to spark your creativity today.
+				</Text>
+				<Button variant="white">Book Now</Button>
+			</Section>
 			{/** FAQs */}
 			{/** Instagram */}
 		</PageTemplate>
