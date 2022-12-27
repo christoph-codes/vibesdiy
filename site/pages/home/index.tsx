@@ -1,12 +1,14 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
-import Link from "next/link";
-import Button from "../../components/Button";
-import FlexCard from "../../components/FlexCard";
-import Hero from "../../components/Hero";
-import Section from "../../components/Section";
-import Title from "../../components/Title";
-import PageTemplate from "../../templates/Page";
-import styles from "./Home.module.scss";
+import { Box, Flex, Image, Text } from '@chakra-ui/react';
+import Link from 'next/link';
+import Accordion from '../../components/Accordion';
+import Button from '../../components/Button';
+import FlexCard from '../../components/FlexCard';
+import Hero from '../../components/Hero';
+import Section from '../../components/Section';
+import Title from '../../components/Title';
+import PageTemplate from '../../templates/Page';
+import homeFaqs from '../../utils/content/homeFaqs';
+import styles from './Home.module.scss';
 
 const Home = () => {
 	return (
@@ -14,67 +16,67 @@ const Home = () => {
 			<Hero
 				className={styles.Home__hero}
 				home
-				bgImg="/bg.png"
+				bgImg='/bg.png'
 				containerClass={styles.Home__heroContainer}
-				borderBottomColor="brand.black.default"
+				borderBottomColor='brand.black.default'
 				borderBottomWidth={12}
-				borderBottomStyle="solid"
+				borderBottomStyle='solid'
 			>
-				<Title textAlign="center" color="white" textShadow="xl">
+				<Title textAlign='center' color='white' textShadow='xl'>
 					DIY in style
 				</Title>
-				<Text marginBottom={4} fontSize={24} color="white">
+				<Text marginBottom={4} fontSize={24} color='white'>
 					Let your creativity flow through your fingertips. For Proof
 					Only.
 				</Text>
-				<Button href="/book-now" variant="white">
+				<Button href='/book-now' variant='white'>
 					Book Now
 				</Button>
 			</Hero>
-			<Section marginTop="-60px" paddingTop={0}>
-				<Flex justifyContent="center" columnGap="12">
-					<FlexCard cardColor="brand.primary.default">
+			<Section marginTop='-60px' paddingTop={0}>
+				<Flex justifyContent='center' columnGap='12'>
+					<FlexCard cardColor='brand.primary.default'>
 						Paint Pouring
 					</FlexCard>
-					<FlexCard cardColor="brand.black.default">
+					<FlexCard cardColor='brand.black.default'>
 						Hand Painting
 					</FlexCard>
-					<FlexCard cardColor="brand.secondary.default">
+					<FlexCard cardColor='brand.secondary.default'>
 						Rug Tufting
 					</FlexCard>
 				</Flex>
 			</Section>
-			<Section textAlign="center" containerClass={styles.Home__located}>
-				<Title h2 textAlign="center">
+			<Section textAlign='center' containerClass={styles.Home__located}>
+				<Title h2 textAlign='center'>
 					The Premiere Creative Space
 				</Title>
-				<Text fontSize="xl" marginBottom={4}>
+				<Text fontSize='xl' marginBottom={4}>
 					Located in Something Something Shopping Center.
 					<br />
 					<Link
-						className="LINK"
-						href="https://goo.gl/maps/Lr47ZATSsNbsaMXf6"
+						className='LINK'
+						href='https://goo.gl/maps/Lr47ZATSsNbsaMXf6'
 					>
 						7557 Norman Rockwell Ln, Bldg 2 Suite 120
 					</Link>
 				</Text>
-				<Button href="/location">Come Visit Us</Button>
+				<Button href='/location'>Come Visit Us</Button>
 			</Section>
 			<Section
-				bgColor="brand.quad.light"
+				bgColor='brand.quad.light'
 				containerClass={styles.Home__featured}
 			>
 				<Flex
-					justifyContent="space-around"
-					alignItems="center"
-					columnGap="64px"
+					justifyContent='space-around'
+					alignItems='center'
+					columnGap='64px'
 				>
-					<Box width="100%">
-						<Image src="/product_features.png" alt="Paint Pour" />
+					<Box width='100%'>
+						<Image src='/product_features.png' alt='Paint Pour' />
 					</Box>
-					<Box width="100%">
+					<Box width='100%'>
 						<Title
-							color="brand.quad.default"
+							color='brand.quad.default'
 							h3
 						>{`Let's Get Creating`}</Title>
 						<Text>
@@ -97,17 +99,23 @@ const Home = () => {
 					</Box>
 				</Flex>
 			</Section>
-			<Section bgImage="/book_bg.png" containerClass={styles.Home__book}>
-				<Title textAlign="center" color="white" h2>
+			<Section bgImage='/book_bg.png' containerClass={styles.Home__book}>
+				<Title textAlign='center' color='white' h2>
 					Book Session Today!
 				</Title>
-				<Text marginBottom={4} fontSize={24} color="white">
+				<Text marginBottom={4} fontSize={24} color='white'>
 					If you are the spontaneous type, stop in today and book a
 					last minute session to spark your creativity today.
 				</Text>
-				<Button variant="white">Book Now</Button>
+				<Button variant='white'>Book Now</Button>
 			</Section>
 			{/** FAQs */}
+			<Section containerClass={styles.Home__faq}>
+				<Title textAlign='center' marginBottom={4}>
+					FAQs
+				</Title>
+				<Accordion items={homeFaqs} />
+			</Section>
 			{/** Instagram */}
 		</PageTemplate>
 	);
