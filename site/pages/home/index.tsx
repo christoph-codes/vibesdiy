@@ -22,10 +22,8 @@ const Home = ({ posts }) => {
 				borderBottomColor='brand.black.default'
 				borderBottomWidth={6}
 				borderBottomStyle='solid'
+				title='DIY in Style'
 			>
-				<Title textAlign='center' color='white' textShadow='xl'>
-					DIY in style
-				</Title>
 				<Text marginBottom={4} fontSize={24} color='white'>
 					Let your creativity flow through your fingertips. For Proof
 					Only.
