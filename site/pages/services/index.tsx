@@ -10,11 +10,8 @@ import styles from './Services.module.scss';
 const Services = () => {
 	return (
 		<PageTemplate
-			metaData={{
-				title: 'Services for Vibes DIY Studio',
-				description:
-					'Services offered by Vibes DIY Studio include creative paint pouring, custom ceramic pot painting, and rug tufting. Get in touch with us today!',
-			}}
+			metaTitle='Services » Vibes DIY Studio'
+			metaDescription='Services offered by Vibes DIY Studio include creative paint pouring, custom ceramic pot painting, and rug tufting. Get in touch with us today!'
 			className={styles.Services}
 		>
 			<Hero bgImg='/service_bg.png' title='Services' />
