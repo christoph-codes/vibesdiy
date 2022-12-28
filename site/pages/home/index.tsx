@@ -41,10 +41,16 @@ const Home = ({ posts }) => {
 					<FlexCard cardColor='brand.primary.default'>
 						Paint Pouring
 					</FlexCard>
-					<FlexCard cardColor='brand.black.default'>
+					<FlexCard
+						bgImage='/ceramic_paint_flex_card.png'
+						cardColor='brand.black.default'
+					>
 						Hand Painting
 					</FlexCard>
-					<FlexCard cardColor='brand.secondary.default'>
+					<FlexCard
+						bgImage='/rug_tufting_flex_card.png'
+						cardColor='brand.secondary.default'
+					>
 						Rug Tufting
 					</FlexCard>
 				</Flex>
