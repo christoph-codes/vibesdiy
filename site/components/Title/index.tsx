@@ -1,21 +1,21 @@
-import { Box, Heading, HeadingProps } from "@chakra-ui/react";
-import { ReactNode } from "react";
+import { Box, Heading, HeadingProps } from '@chakra-ui/react';
+import { ReactNode } from 'react';
 
 export type TEyebrow =
-	| "primary"
-	| "secondary"
-	| "tertiary"
-	| "quad"
-	| "black"
-	| "white";
+	| 'primary'
+	| 'secondary'
+	| 'tertiary'
+	| 'quad'
+	| 'black'
+	| 'white';
 
 const headerSize = {
-	h1: "4xl",
-	h2: "3xl",
-	h3: "2xl",
-	h4: "xl",
-	h5: "lg",
-	h6: "md",
+	h1: '3xl',
+	h2: '2xl',
+	h3: 'xl',
+	h4: 'lg',
+	h5: 'md',
+	h6: 'sm',
 };
 
 export interface ITitleProps extends HeadingProps {
@@ -27,7 +27,7 @@ export interface ITitleProps extends HeadingProps {
 	h4?: boolean;
 	h5?: boolean;
 	h6?: boolean;
-	textAlign?: "center" | "left";
+	textAlign?: HeadingProps['textAlign'];
 	className?: string;
 }
 
@@ -40,37 +40,50 @@ const Title = ({
 	h4,
 	h5,
 	h6,
-	textAlign = "left",
+	textAlign = 'left',
 	className,
 	...rest
-}: ITitleProps) => {
+}: ITitleProps & HeadingProps) => {
 	const chosenHeader = h1
-		? "h1"
+		? 'h1'
 		: h2
-		? "h2"
+		? 'h2'
 		: h3
-		? "h3"
+		? 'h3'
 		: h4
-		? "h4"
+		? 'h4'
 		: h5
-		? "h5"
+		? 'h5'
 		: h6
-		? "h6"
-		: "h1";
+		? 'h6'
+		: 'h1';
+	const chosenMobileHeader = h1
+		? 'h2'
+		: h2
+		? 'h3'
+		: h3
+		? 'h4'
+		: h4
+		? 'h5'
+		: h5
+		? 'h6'
+		: h6
+		? 'p'
+		: 'h2';
 	return (
-		<Box className={className || ""}>
-			{eyebrow && (chosenHeader === "h1" || chosenHeader === "h2") && (
+		<Box className={className || ''}>
+			{eyebrow && (chosenHeader === 'h1' || chosenHeader === 'h2') && (
 				<Box
 					bg={`brand.${eyebrow}.default`}
-					width="72px"
+					width='72px'
 					height={2}
 					marginBottom={2}
 					borderRadius={8}
-					marginX={textAlign === "center" && "auto"}
+					marginX={textAlign === 'center' && 'auto'}
 				/>
 			)}
 			<Heading
-				color="brand.black.default"
+				color='brand.black.default'
 				as={chosenHeader}
 				size={headerSize[chosenHeader]}
 				textAlign={textAlign}
