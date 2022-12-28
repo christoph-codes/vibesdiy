@@ -1,0 +1,11 @@
+.BookNow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    p {
+        max-width: 70%;
+    }
+}

@@ -77,7 +77,7 @@ const Title = ({
 					bg={`brand.${eyebrow}.default`}
 					width='72px'
 					height={2}
-					marginBottom={2}
+					marginBottom={4}
 					borderRadius={8}
 					marginX={textAlign === 'center' && 'auto'}
 				/>

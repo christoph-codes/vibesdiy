@@ -1,6 +1,7 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 import Accordion from '../../components/Accordion';
+import BookNow from '../../components/BookNow';
 import Button from '../../components/Button';
 import FlexCard from '../../components/FlexCard';
 import Hero from '../../components/Hero';
@@ -9,6 +10,7 @@ import Section from '../../components/Section';
 import Title from '../../components/Title';
 import PageTemplate from '../../templates/Page';
 import homeFaqs from '../../utils/content/homeFaqs';
+import { squareLink } from '../../utils/navLinks';
 import styles from './Home.module.scss';
 
 const Home = ({ posts }) => {
@@ -22,15 +24,13 @@ const Home = ({ posts }) => {
 				borderBottomColor='brand.black.default'
 				borderBottomWidth={6}
 				borderBottomStyle='solid'
+				title='DIY in Style'
 			>
-				<Title textAlign='center' color='white' textShadow='xl'>
-					DIY in style
-				</Title>
 				<Text marginBottom={4} fontSize={24} color='white'>
 					Let your creativity flow through your fingertips. For Proof
 					Only.
 				</Text>
-				<Button href='/book-now' variant='white'>
+				<Button href={squareLink} variant='white'>
 					Book Now
 				</Button>
 			</Hero>
@@ -43,10 +43,16 @@ const Home = ({ posts }) => {
 					<FlexCard cardColor='brand.primary.default'>
 						Paint Pouring
 					</FlexCard>
-					<FlexCard cardColor='brand.black.default'>
+					<FlexCard
+						bgImage='/ceramic_paint_flex_card.png'
+						cardColor='brand.black.default'
+					>
 						Hand Painting
 					</FlexCard>
-					<FlexCard cardColor='brand.secondary.default'>
+					<FlexCard
+						bgImage='/rug_tufting_flex_card.png'
+						cardColor='brand.secondary.default'
+					>
 						Rug Tufting
 					</FlexCard>
 				</Flex>
@@ -110,16 +116,11 @@ const Home = ({ posts }) => {
 					</Box>
 				</Flex>
 			</Section>
-			<Section bgImage='/book_bg.png' containerClass={styles.Home__book}>
-				<Title textAlign='center' color='white' h2>
-					Book Session Today!
-				</Title>
-				<Text marginBottom={4} fontSize={24} color='white'>
-					If you are the spontaneous type, stop in today and book a
-					last minute session to spark your creativity today.
-				</Text>
-				<Button variant='white'>Book Now</Button>
-			</Section>
+			<BookNow
+				title='Book Session Today!'
+				description='If you are the spontaneous type, stop in today and book a
+					last minute session to spark your creativity today.'
+			/>
 			{/** FAQs */}
 			<Section containerClass={styles.Home__faq}>
 				<Title textAlign='center' marginBottom={4}>

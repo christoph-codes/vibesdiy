@@ -1,16 +1,20 @@
 import { INavigationProps } from "../components/Navigation";
 
+export const squareLink = 'https://squareup.com/appointments/buyer/widget/yow3ms7055ip18/L9QAGAMTXZ4C7';
+
+const homepagePath: '/home' | '/' = '/home';
+
 export const navigationLinks: INavigationProps["links"] = [
 	{
 		link: {
 			label: "Home",
-			path: "/",
+			path: homepagePath,
 		},
 	},
 	{
 		link: {
 			label: "Services",
-			path: "/servcies",
+			path: "/services",
 		},
 		// dropdown: [
 		// 	{
@@ -54,7 +58,7 @@ export const navigationLinks: INavigationProps["links"] = [
 	{
 		link: {
 			label: "Book Now",
-			path: "https://squareup.com/appointments/buyer/widget/yow3ms7055ip18/L9QAGAMTXZ4C7",
+			path: squareLink,
 			target: "_blank",
 		},
 		cta: true,

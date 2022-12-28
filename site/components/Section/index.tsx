@@ -1,9 +1,9 @@
-import { Box, BoxProps, Text } from "@chakra-ui/react";
-import { StaticImageData } from "next/image";
-import { FC, ReactNode } from "react";
-import Container from "../Container";
-import Title from "../Title";
-import styles from "./Section.module.scss";
+import { Box, BoxProps, Text } from '@chakra-ui/react';
+import { StaticImageData } from 'next/image';
+import { FC, ReactNode } from 'react';
+import Container from '../Container';
+import Title from '../Title';
+import styles from './Section.module.scss';
 
 export type ISectionProps = {
 	children?: ReactNode;
@@ -30,7 +30,7 @@ const Section: FC<ISectionProps & BoxProps> = ({
 	const content = (
 		<>
 			{title && (
-				<Title h2 eyebrow="primary" className={styles.Section__title}>
+				<Title h2 eyebrow='primary' className={styles.Section__title}>
 					{title}
 				</Title>
 			)}
@@ -44,14 +44,14 @@ const Section: FC<ISectionProps & BoxProps> = ({
 	);
 	return (
 		<Box
-			as="section"
-			bgColor={bgColor || ""}
+			as='section'
+			bgColor={bgColor || ''}
 			className={`${styles.Section} ${className}`}
 			paddingX={4}
 			backgroundImage={
 				bgImg && {
 					backgroundImage: `url(${bgImg.src})`,
-					backgroundColor: "unset",
+					backgroundColor: 'unset',
 				}
 			}
 			{...rest}
