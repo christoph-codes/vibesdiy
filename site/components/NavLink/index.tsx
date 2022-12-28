@@ -1,13 +1,13 @@
-import Link from "next/link";
-import { Box, Text } from "@chakra-ui/react";
-import { ChevronDownIcon } from "@chakra-ui/icons";
-import styles from "./NavLink.module.scss";
-import { ReactNode, useState } from "react";
+import Link from 'next/link';
+import { Box, Text } from '@chakra-ui/react';
+import { ChevronDownIcon } from '@chakra-ui/icons';
+import styles from './NavLink.module.scss';
+import { ReactNode, useState } from 'react';
 
 export interface ILink {
 	label: string;
 	path: string;
-	target?: HTMLAnchorElement["target"];
+	target?: HTMLAnchorElement['target'];
 }
 
 export interface INavLinkProps {
@@ -16,7 +16,7 @@ export interface INavLinkProps {
 	children: ReactNode | string;
 	dropdownLinks?: ILink[];
 	cta?: boolean;
-	target?: HTMLAnchorElement["target"];
+	target?: HTMLAnchorElement['target'];
 	onClick?: () => void;
 }
 
@@ -34,7 +34,7 @@ const NavLink = ({
 	const SubNavigationLink = ({ label, path }) => {
 		return (
 			<Link className={`${styles.NavLinkSub} ${className}`} href={path}>
-				<Text as="span">{label}</Text>
+				<Text as='span'>{label}</Text>
 			</Link>
 		);
 	};
@@ -48,15 +48,15 @@ const NavLink = ({
 					setActive(false);
 				}}
 				className={`${styles.NavLink} ${
-					cta ? styles.NavLink__CTA : ""
+					cta ? styles.NavLink__CTA : ''
 				} ${className} ${
-					active && doDropdownsExist ? styles.NavLinkActive : ""
+					active && doDropdownsExist ? styles.NavLinkActive : ''
 				}`}
-				href={href || "#"}
+				href={href || '#'}
 				target={target}
 				{...rest}
 			>
-				<Text as="span">
+				<Text as='span'>
 					{children}
 					{doDropdownsExist && <ChevronDownIcon />}
 				</Text>
