@@ -1,7 +1,9 @@
 .Hero {
 	&__home {
 		max-height: 420px;
-		max-height: 320px;
+		@media(max-width: 48em) {
+			max-height: 320px;
+		}
 		height: 100vh;
 		border-bottom: solid 4px var(--chakra-brand-colors-primary-default);
 	}
