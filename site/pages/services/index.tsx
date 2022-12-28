@@ -94,7 +94,7 @@ const Services = () => {
 					/>
 					<Box marginTop={{ base: 8, md: 0 }}>
 						<Title h2 eyebrow='secondary'>
-							Ceramic Pot Painting
+							Rug Tufting
 						</Title>
 						<Text>
 							{`Lorem Ipsum is simply dummy text of the printing and
@@ -105,7 +105,7 @@ const Services = () => {
 						</Text>
 						<Button
 							variant='secondary'
-							href='/services/ceramic-painting'
+							href='/services/rug-tufting'
 						>
 							Learn More
 						</Button>
