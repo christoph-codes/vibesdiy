@@ -135,7 +135,7 @@ export default Home;
 // export const getStaticProps = async () => {
 // 	// console.log('YYOOOOO', process.env.NEXT_APP_INSTAGRAM_KEY);
 
-// 	const url = `https://graph.instagram.com/vibesdiystudio/media?fields=id,caption,media_url,timestamp,media_type,permalink,thumbnail_url&access_token=${process.env.NEXT_APP_INSTAGRAM_KEY}`;
+// 	const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,thumbnail_url&access_token=${process.env.NEXT_APP_INSTAGRAM_KEY}`;
 // 	const data = await fetch(url);
 // 	const posts = await data.json();
 
