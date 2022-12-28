@@ -60,3 +60,18 @@ export const navigationLinks: INavigationProps["links"] = [
 		cta: true,
 	},
 ];
+
+export const utilityLinks: INavigationProps["links"] = [
+	{
+		link: {
+			label: "Privacy Policy",
+			path: "/privacy-policy",
+		},
+	},
+	{
+		link: {
+			label: "Terms of Service",
+			path: "/terms",
+		},
+	},
+]
