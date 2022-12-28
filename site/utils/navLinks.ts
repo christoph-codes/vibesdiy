@@ -12,7 +12,7 @@ export const navigationLinks: INavigationProps["links"] = [
 	{
 		link: {
 			label: "Services",
-			path: "/servcies",
+			path: "/services",
 		},
 		// dropdown: [
 		// 	{
