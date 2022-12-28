@@ -72,11 +72,9 @@ const PageTemplate: FC<PageProps> = ({
 				120 | 702.123.4567
 			</AnnouncementBar>
 			<Navigation links={navigationLinks} />
-			{/** Header */}
 			<main className={`${styles.PageTemplate} ${className}`}>
 				{children}
 			</main>
-			{/** Footer */}
 			<Footer />
 		</>
 	);
