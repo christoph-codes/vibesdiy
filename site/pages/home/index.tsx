@@ -4,13 +4,14 @@ import Accordion from '../../components/Accordion';
 import Button from '../../components/Button';
 import FlexCard from '../../components/FlexCard';
 import Hero from '../../components/Hero';
+import InstagramFeed from '../../components/InstagramFeed';
 import Section from '../../components/Section';
 import Title from '../../components/Title';
 import PageTemplate from '../../templates/Page';
 import homeFaqs from '../../utils/content/homeFaqs';
 import styles from './Home.module.scss';
 
-const Home = () => {
+const Home = ({ posts }) => {
 	return (
 		<PageTemplate className={styles.Home}>
 			<Hero
@@ -117,8 +118,35 @@ const Home = () => {
 				<Accordion items={homeFaqs} />
 			</Section>
 			{/** Instagram */}
+			<Section>
+				<Title textAlign='center' marginBottom={4}>
+					Follow Us On Instagram
+				</Title>
+				<InstagramFeed />
+			</Section>
 		</PageTemplate>
 	);
 };
 
 export default Home;
+
+// TODO: Create custom feed when available
+// <InstagramFeed posts={posts} />
+// export const getStaticProps = async () => {
+// 	// console.log('YYOOOOO', process.env.NEXT_APP_INSTAGRAM_KEY);
+
+// 	const url = `https://graph.instagram.com/vibesdiystudio/media?fields=id,caption,media_url,timestamp,media_type,permalink,thumbnail_url&access_token=${process.env.NEXT_APP_INSTAGRAM_KEY}`;
+// 	const data = await fetch(url);
+// 	const posts = await data.json();
+
+// 	const limited = posts.data.filter((item) => {
+// 		console.log('TYPE:', item.media_type);
+// 		return item.media_type === 'IMAGE';
+// 	});
+
+// 	return {
+// 		props: {
+// 			posts: limited.slice(0, 8),
+// 		},
+// 	};
+// };
