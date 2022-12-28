@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, BoxProps, Text } from "@chakra-ui/react";
 import { StaticImageData } from "next/image";
 import { FC, ReactNode } from "react";
 import Container from "../Container";
@@ -8,24 +8,18 @@ import styles from "./Section.module.scss";
 export type ISectionProps = {
 	children?: ReactNode;
 	className?: string;
+	containerClass?: string;
 	hideContainer?: boolean;
-	bgColor?:
-		| "primary"
-		| "secondary"
-		| "tertiary"
-		| "quad"
-		| "black"
-		| "grey"
-		| "offwhite";
+	bgColor?: string;
 	bgImg?: StaticImageData;
 	title?: string;
 	description?: string;
-	rest?: any[];
 };
 
-const Section: FC<ISectionProps> = ({
+const Section: FC<ISectionProps & BoxProps> = ({
 	children,
 	className,
+	containerClass,
 	hideContainer,
 	bgColor,
 	bgImg,
@@ -62,7 +56,11 @@ const Section: FC<ISectionProps> = ({
 			}
 			{...rest}
 		>
-			{!hideContainer ? <Container>{content}</Container> : content}
+			{!hideContainer ? (
+				<Container className={containerClass}>{content}</Container>
+			) : (
+				content
+			)}
 		</Box>
 	);
 };

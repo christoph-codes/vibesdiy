@@ -13,3 +13,12 @@ a {
 * {
   box-sizing: border-box;
 }
+.LINK {
+	color: var(--chakra-colors-brand-quad-default);
+	text-decoration: underline;
+	font-weight: bold;
+}
+p {
+	margin-bottom: 16px !important;
+	line-height: 1.5;
+}

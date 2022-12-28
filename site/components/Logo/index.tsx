@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Image } from "@chakra-ui/react";
 import styles from "./Logo.module.scss";
 
 export interface ILogoProps {
@@ -18,7 +18,6 @@ const Logo = ({ variant = "primary", className }: ILogoProps) => {
 	return (
 		<Image
 			alt="Vibes DIY Logo"
-			fill
 			className={`${styles.Logo} ${className || ""}`}
 			src={getLogo[variant]}
 		/>

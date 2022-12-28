@@ -1,11 +1,12 @@
-import { ReactNode, FC } from "react";
-import { useRouter } from "next/router";
-import { StaticImageData } from "next/image";
-import Head from "next/head";
-import styles from "./Page.module.scss";
-import AnnouncementBar from "../../components/AnnouncementBar";
-import Navigation from "../../components/Navigation";
-import { navigationLinks } from "../../utils/navLinks";
+import { ReactNode, FC } from 'react';
+import { useRouter } from 'next/router';
+import { StaticImageData } from 'next/image';
+import Head from 'next/head';
+import styles from './Page.module.scss';
+import AnnouncementBar from '../../components/AnnouncementBar';
+import Navigation from '../../components/Navigation';
+import { navigationLinks } from '../../utils/navLinks';
+import Footer from '../../components/Footer';
 
 export type PageProps = {
 	className?: string;
@@ -22,60 +23,59 @@ export type PageProps = {
 const PageTemplate: FC<PageProps> = ({
 	className,
 	metaData = {
-		title: "Vibes DIY Studio » Create the life you want to see",
-		image: "/vibes-seo_image.png",
+		title: 'Vibes DIY Studio » Create the life you want to see',
+		image: '/vibes-seo_image.png',
 		description:
-			"The premiere DIY studio in Las Vegas, NV located in Centennial Hills.",
+			'The premiere DIY studio in Las Vegas, NV located in Centennial Hills.',
 	},
 	children,
 }) => {
 	const router = useRouter();
-	const domain = "https://vibesdiystudio.com";
+	const domain = 'https://vibesdiystudio.com';
 	const url = router && router.asPath ? router.asPath : undefined;
-	const canonical = url && url === "/" ? domain : domain + url;
+	const canonical = url && url === '/' ? domain : domain + url;
 	return (
 		<>
 			<Head>
 				<title>{metaData.title}</title>
-				<meta charSet="utf-8" />
-				<meta content="IE=edge" httpEquiv="X-UA-Compatible" />
+				<meta charSet='utf-8' />
+				<meta content='IE=edge' httpEquiv='X-UA-Compatible' />
 				<meta
-					content="width=device-width, initial-scale=1"
-					name="viewport"
+					content='width=device-width, initial-scale=1'
+					name='viewport'
 				/>
 				{metaData.description && (
-					<meta content={metaData.description} name="description" />
+					<meta content={metaData.description} name='description' />
 				)}
-				<meta content="follow, index" name="robots" />
-				<meta content="brand.primary.default" name="theme-color" />
+				<meta content='follow, index' name='robots' />
+				<meta content='brand.primary.default' name='theme-color' />
 				<meta
-					content="brand.primary.default"
-					name="msapplication-TileColor"
+					content='brand.primary.default'
+					name='msapplication-TileColor'
 				/>
-				<link href="/favicon.ico" rel="shortcut icon" />
+				<link href='/favicon.ico' rel='shortcut icon' />
 
-				{url && <link href={canonical} rel="canonical" />}
-				<meta content="en_US" property="og:locale" />
-				<meta content={metaData.title} property="og:title" />
+				{url && <link href={canonical} rel='canonical' />}
+				<meta content='en_US' property='og:locale' />
+				<meta content={metaData.title} property='og:title' />
 				<meta
 					content={metaData.description}
-					property="og:description"
+					property='og:description'
 				/>
-				<meta content={canonical} property="og:url" />
-				<meta content="/vibes-seo_image.png" property="og:image" />
-				<meta content="summary_large_image" name="twitter:card" />
-				<meta content={metaData.description} property="og:image:alt" />
+				<meta content={canonical} property='og:url' />
+				<meta content='/vibes-seo_image.png' property='og:image' />
+				<meta content='summary_large_image' name='twitter:card' />
+				<meta content={metaData.description} property='og:image:alt' />
 			</Head>
 			<AnnouncementBar>
 				<strong>NOW OPEN!</strong> 7575 Norman Rockwell Ln, Bldg 2 Suite
 				120 | 702.123.4567
 			</AnnouncementBar>
 			<Navigation links={navigationLinks} />
-			{/** Header */}
 			<main className={`${styles.PageTemplate} ${className}`}>
 				{children}
 			</main>
-			{/** Footer */}
+			<Footer />
 		</>
 	);
 };
