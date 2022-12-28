@@ -22,7 +22,7 @@ const PageTemplate: FC<PageProps> = ({
 	className,
 	metaTitle = 'Vibes DIY Studio » Create the life you want to see',
 	metaImage = '/vibes_seo.png',
-	metaDescription = 'The premiere DIY studio in Las Vegas, NV located in Centennial Hills.',
+	metaDescription = 'A Las Vegas creative Studio Experience that combines rug tufting one of a kind decor, hand painted trendy cement pieces, and paint pouring notable figurines. All designed BY YOU!',
 	children,
 }) => {
 	const router = useRouter();
