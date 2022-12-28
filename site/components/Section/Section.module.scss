@@ -1,4 +1,10 @@
 .Section {
+	padding-top: 64px;
+	padding-bottom: 64px;
+	@media(max-width: 48em) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
 	background-size: cover;
 	background-repeat: no-repeat;
 	&__title {

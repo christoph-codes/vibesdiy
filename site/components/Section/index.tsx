@@ -48,7 +48,6 @@ const Section: FC<ISectionProps & BoxProps> = ({
 			bgColor={bgColor || ''}
 			className={`${styles.Section} ${className}`}
 			paddingX={4}
-			paddingY={{ base: '32px', md: '64px' }}
 			backgroundImage={
 				bgImg && {
 					backgroundImage: `url(${bgImg.src})`,
