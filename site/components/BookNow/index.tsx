@@ -26,7 +26,7 @@ const BookNow = ({ title, description }: IBookNowProps) => {
 					{description}
 				</Text>
 			)}
-			<Button variant='white' href={squareLink}>
+			<Button variant='white' href={squareLink} target='_blank'>
 				Book Now
 			</Button>
 		</Section>
