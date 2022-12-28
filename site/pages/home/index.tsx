@@ -20,7 +20,7 @@ const Home = ({ posts }) => {
 				bgImg='/bg.png'
 				containerClass={styles.Home__heroContainer}
 				borderBottomColor='brand.black.default'
-				borderBottomWidth={12}
+				borderBottomWidth={6}
 				borderBottomStyle='solid'
 			>
 				<Title textAlign='center' color='white' textShadow='xl'>
@@ -34,8 +34,12 @@ const Home = ({ posts }) => {
 					Book Now
 				</Button>
 			</Hero>
-			<Section marginTop='-60px' paddingTop={0}>
-				<Flex justifyContent='center' columnGap='12'>
+			<Section marginTop={{ base: '-30px', md: '-60px' }} paddingTop={0}>
+				<Flex
+					justifyContent='center'
+					columnGap={{ base: 0, sm: '6', md: '12' }}
+					flexDirection={{ base: 'column', sm: 'row' }}
+				>
 					<FlexCard cardColor='brand.primary.default'>
 						Paint Pouring
 					</FlexCard>
@@ -47,7 +51,11 @@ const Home = ({ posts }) => {
 					</FlexCard>
 				</Flex>
 			</Section>
-			<Section textAlign='center' containerClass={styles.Home__located}>
+			<Section
+				textAlign='center'
+				containerClass={styles.Home__located}
+				paddingTop={0}
+			>
 				<Title h2 textAlign='center'>
 					The Premiere Creative Space
 				</Title>
@@ -71,14 +79,16 @@ const Home = ({ posts }) => {
 					justifyContent='space-around'
 					alignItems='center'
 					columnGap='64px'
+					flexDirection={{ base: 'column', sm: 'row' }}
 				>
-					<Box width='100%'>
+					<Box width='100%' marginBottom={{ base: 8, md: 0 }}>
 						<Image src='/product_features.png' alt='Paint Pour' />
 					</Box>
 					<Box width='100%'>
 						<Title
 							color='brand.quad.default'
 							h3
+							textAlign={{ base: 'center', md: 'left' }}
 						>{`Let's Get Creating`}</Title>
 						<Text>
 							{`Lorem Ipsum is simply dummy text of the printing and
@@ -118,8 +128,8 @@ const Home = ({ posts }) => {
 				<Accordion items={homeFaqs} />
 			</Section>
 			{/** Instagram */}
-			<Section>
-				<Title textAlign='center' marginBottom={4}>
+			<Section paddingTop={{ base: 0, md: '64px' }}>
+				<Title textAlign='center' marginBottom={8}>
 					Follow Us On Instagram
 				</Title>
 				<InstagramFeed />

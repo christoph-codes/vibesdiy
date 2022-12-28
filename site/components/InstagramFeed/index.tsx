@@ -38,7 +38,7 @@ const InstagramFeed = () => {
 	return (
 		<Box className={styles.InstagramFeed}>
 			<blockquote
-				className='instagram-media'
+				className={`instagram-media ${styles.InstagramFeed__iframe}`}
 				data-instgrm-permalink='https://www.instagram.com/vibesdiystudio/'
 				data-instgrm-version='14'
 				style={{ padding: 0, width: '100%' }}
