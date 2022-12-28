@@ -2,6 +2,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import { Box, Flex } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useSideNav } from '../../providers/SidenavProvider';
+import { squareLink } from '../../utils/navLinks';
 import Container from '../Container';
 import Logo from '../Logo';
 import NavLink, { INavLinkProps, ILink } from '../NavLink';
@@ -43,7 +44,7 @@ const Navigation = ({ links, className }: INavigationProps) => {
 					<NavLink
 						className={styles.Navigation__mobileCTA}
 						target='_blank'
-						href='https://squareup.com/appointments/buyer/widget/yow3ms7055ip18/L9QAGAMTXZ4C7'
+						href={squareLink}
 						cta
 					>
 						Book Now
