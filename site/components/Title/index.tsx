@@ -57,31 +57,21 @@ const Title = ({
 		: h6
 		? 'h6'
 		: 'h1';
-	const chosenMobileHeader = h1
-		? 'h2'
-		: h2
-		? 'h3'
-		: h3
-		? 'h4'
-		: h4
-		? 'h5'
-		: h5
-		? 'h6'
-		: h6
-		? 'p'
-		: 'h2';
 	return (
 		<Box className={className || ''}>
-			{eyebrow && (chosenHeader === 'h1' || chosenHeader === 'h2') && (
-				<Box
-					bg={`brand.${eyebrow}.default`}
-					width='72px'
-					height={2}
-					marginBottom={4}
-					borderRadius={8}
-					marginX={textAlign === 'center' && 'auto'}
-				/>
-			)}
+			{eyebrow &&
+				(chosenHeader === 'h1' ||
+					chosenHeader === 'h2' ||
+					chosenHeader === 'h3') && (
+					<Box
+						bg={`brand.${eyebrow}.default`}
+						width='72px'
+						height={2}
+						marginBottom={4}
+						borderRadius={8}
+						marginX={textAlign === 'center' && 'auto'}
+					/>
+				)}
 			<Heading
 				color='brand.black.default'
 				as={chosenHeader}
