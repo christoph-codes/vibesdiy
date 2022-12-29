@@ -51,7 +51,7 @@ const Services = () => {
 					columnGap={{ base: '64px', md: '128px' }}
 					flexDirection={{ base: 'column-reverse', md: 'row' }}
 				>
-					<Box marginBottom={{ base: 8, md: 0 }}>
+					<Box marginTop={{ base: 8, md: 0 }}>
 						<Title h2 eyebrow='black'>
 							Hand Painting
 						</Title>
@@ -62,16 +62,13 @@ const Services = () => {
 							tables to display proudly or wherever you choose.
 							Pick your piece and get to painting!
 						</Text>
-						<Button
-							variant='black'
-							href='/services/ceramic-painting'
-						>
+						<Button variant='black' href='/services/hand-painting'>
 							Learn More
 						</Button>
 					</Box>
 					<Image
 						src='/service_ceramic_painting.png'
-						alt='Painting a Ceramic Pot on a table'
+						alt='Hand Painting a Ceramic Pot on a table'
 					/>
 				</Flex>
 			</Section>
