@@ -30,7 +30,12 @@ const Section: FC<ISectionProps & BoxProps> = ({
 	const content = (
 		<>
 			{title && (
-				<Title h2 eyebrow='primary' className={styles.Section__title}>
+				<Title
+					h2
+					className={styles.Section__title}
+					textAlign='center'
+					marginBottom={8}
+				>
 					{title}
 				</Title>
 			)}
