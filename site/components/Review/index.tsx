@@ -7,7 +7,7 @@ export interface IReviewProps extends ISectionProps {
 	headshot?: string;
 	author: string;
 	review: string | ReactNode;
-	theme: 'primary' | 'quad' | 'black';
+	theme: 'primary' | 'secondary' | 'black';
 }
 
 const Review = ({
