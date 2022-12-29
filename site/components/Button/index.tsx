@@ -19,7 +19,8 @@ export interface IButtonProps {
 		| 'quad'
 		| 'quad-outline'
 		| 'white'
-		| 'black';
+		| 'black'
+		| 'black-outline';
 	href?: string;
 	fullWidth?: boolean;
 	target?: HTMLAttributeAnchorTarget;
