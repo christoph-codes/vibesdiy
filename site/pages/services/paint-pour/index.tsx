@@ -56,27 +56,31 @@ const PaintPouring = () => {
 				containerClass={styles.PaintPouring__gallery}
 				paddingTop={0}
 			>
-				<Flex
-					gap={6}
-					flexDirection={{ base: 'column', md: 'row' }}
-					marginBottom={8}
-				>
-					<Image
-						src='/service_paint_pouring.png'
-						alt='Paint Pouring is amazing'
-					/>
-					<Image
-						src='/service_paint_pouring.png'
-						alt='Paint Pouring is amazing'
-					/>
-					<Image
-						src='/service_paint_pouring.png'
-						alt='Paint Pouring is amazing'
-					/>
+				<Flex flexDir='column' alignItems='center'>
+					<Flex
+						gap={6}
+						flexDirection={{ base: 'column', md: 'row' }}
+						alignItems='center'
+						justifyContent='center'
+						marginBottom={8}
+					>
+						<Image
+							src='/service_paint_pouring.png'
+							alt='Paint Pouring is amazing'
+						/>
+						<Image
+							src='/service_paint_pouring.png'
+							alt='Paint Pouring is amazing'
+						/>
+						<Image
+							src='/service_paint_pouring.png'
+							alt='Paint Pouring is amazing'
+						/>
+					</Flex>
+					<Button href='/gallery' variant='primary-outline'>
+						View Full Gallery
+					</Button>
 				</Flex>
-				<Button href='/gallery' variant='primary-outline'>
-					View Full Gallery
-				</Button>
 			</Section>
 			{/* Review Block */}
 			<Review
@@ -87,7 +91,7 @@ were going back!'
 				headshot='/tinas_headshot_review.png'
 			/>
 			<Section title='FAQs'>
-				<Accordion items={homeFaqs} />
+				<Accordion items={homeFaqs} theme='primary' />
 			</Section>
 			<BookNow
 				title='Book Your Paint Pouring Session Today!'
