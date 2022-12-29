@@ -1,4 +1,5 @@
 import { Text } from '@chakra-ui/react';
+import { ReactNode } from 'react';
 import { squareLink } from '../../utils/navLinks';
 import Button from '../Button';
 import Section from '../Section';
@@ -7,7 +8,7 @@ import styles from './BookNow.module.scss';
 
 export interface IBookNowProps {
 	title: string;
-	description?: string;
+	description?: string | ReactNode;
 }
 
 const BookNow = ({ title, description }: IBookNowProps) => {
@@ -22,6 +23,7 @@ const BookNow = ({ title, description }: IBookNowProps) => {
 					marginBottom={4}
 					fontSize={24}
 					color='white'
+					fontWeight='bold'
 				>
 					{description}
 				</Text>

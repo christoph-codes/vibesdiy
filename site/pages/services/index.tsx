@@ -14,7 +14,7 @@ const Services = () => {
 			metaDescription='Services offered by Vibes DIY Studio include creative paint pouring, custom ceramic pot painting, and rug tufting. Get in touch with us today!'
 			className={styles.Services}
 		>
-			<Hero bgImg='/service_bg.png' title='Services' />
+			<Hero bgImg='/service_bg.png' title='DIY Services' />
 			<Section containerClass={`${styles.Services__service}`}>
 				<Flex
 					justifyContent='space-around'
@@ -31,11 +31,11 @@ const Services = () => {
 							Paint Pouring
 						</Title>
 						<Text>
-							{`Lorem Ipsum is simply dummy text of the printing and
-						typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s,
-						when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book.`}
+							The paint pouring experience gives you, the artist,
+							a unique, relaxing session using all the colors you
+							can think of. With over 20+ figures of popular
+							fashion and cartoon art pieces, pick your figurine
+							and get to pouring!
 						</Text>
 						<Button href='/services/paint-pour'>Learn More</Button>
 					</Box>
@@ -53,14 +53,14 @@ const Services = () => {
 				>
 					<Box marginBottom={{ base: 8, md: 0 }}>
 						<Title h2 eyebrow='black'>
-							Ceramic Pot Painting
+							Hand Painting
 						</Title>
 						<Text>
-							{`Lorem Ipsum is simply dummy text of the printing and
-						typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s,
-						when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book.`}
+							The hand painting experience gives you the brush to
+							customize cement art pieces from popular brands or
+							figurines that make perfect pairings for coffee
+							tables to display proudly or wherever you choose.
+							Pick your piece and get to painting!
 						</Text>
 						<Button
 							variant='black'
@@ -94,11 +94,12 @@ const Services = () => {
 							Rug Tufting
 						</Title>
 						<Text>
-							{`Lorem Ipsum is simply dummy text of the printing and
-						typesetting industry. Lorem Ipsum has been the
-						industry's standard dummy text ever since the 1500s,
-						when an unknown printer took a galley of type and
-						scrambled it to make a type specimen book.`}
+							Popular all over TikTok, the rug tufting experience
+							gives you all the tools to create a one of one
+							creation that you can pride yourself in taking home.
+							You`ll be given a simple tutorial on how to create
+							your own rug with over 90 different color options.
+							Pick your yarn and get to tufting!
 						</Text>
 						<Button
 							variant='secondary'
