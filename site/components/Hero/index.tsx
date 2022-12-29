@@ -28,7 +28,7 @@ const Hero = ({
 			className={`${styles.Hero} ${className || ''} ${
 				home ? styles.Hero__home : ''
 			}`}
-			bgColor='brand.primary.default'
+			bgColor='brand.white.hover'
 			bgImage={bgImg}
 			containerClass={containerClass}
 			{...rest}
