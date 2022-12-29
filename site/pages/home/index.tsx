@@ -26,9 +26,16 @@ const Home = ({ posts }) => {
 				borderBottomStyle='solid'
 				title='DIY in Style'
 			>
-				<Text marginBottom={4} fontSize={24} color='white'>
-					Let your creativity flow through your fingertips. For Proof
-					Only.
+				<Text
+					fontWeight='bold'
+					lineHeight='30px'
+					marginBottom={4}
+					fontSize={24}
+					color='white'
+				>
+					From start to finish immerse yourself into this creative
+					space for
+					<br /> an experience like no other.
 				</Text>
 				<Button href={squareLink} variant='white'>
 					Book Now
@@ -97,29 +104,27 @@ const Home = ({ posts }) => {
 							textAlign={{ base: 'center', md: 'left' }}
 						>{`Let's Get Creating`}</Title>
 						<Text>
-							{`Lorem Ipsum is simply dummy text of the printing and
-							typesetting industry. Lorem Ipsum has been the
-							industry's standard dummy text ever since the 1500s,
-							when an unknown printer took a galley of type and
-							scrambled it to make a type specimen book.`}
+							{`With many options to choose from we take your favorite brands from pop culture and give you the tools to create a one of one creation that you can pride yourself in taking home. Popular on TikTok, you now have the opportunity to experience custom rug tufting at its finest, where you will learn how to create your own rug with 90+ color options so the possibilities are endless!`}
 						</Text>
 						<Text>
-							{`It has survived not only five centuries, but also
-							the leap into electronic typesetting, remaining
-							essentially unchanged. It was popularised in the
-							1960s with the release of Letraset sheets containing
-							Lorem Ipsum passages, and more recently with desktop
-							publishing software like Aldus PageMaker including
-							versions of Lorem Ipsum.`}
+							Also we offer paint pouring or hand painting with
+							all the colors you can think of over 20+ figures of
+							popular fashion and cartoon art pieces that makes
+							for a relaxing experience you’ll want to relive over
+							and over again.
 						</Text>
 						<Button>Learn More</Button>
 					</Box>
 				</Flex>
 			</Section>
 			<BookNow
-				title='Book Session Today!'
-				description='If you are the spontaneous type, stop in today and book a
-					last minute session to spark your creativity today.'
+				title='Book A Session Today'
+				description={
+					<>
+						Ready to jump into your creative experience?
+						<br /> View available times now!
+					</>
+				}
 			/>
 			{/** FAQs */}
 			<Section containerClass={styles.Home__faq}>

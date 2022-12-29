@@ -60,8 +60,8 @@ const PageTemplate: FC<PageProps> = ({
 				<meta content={metaDescription} property='og:image:alt' />
 			</Head>
 			<AnnouncementBar>
-				<strong>NOW OPEN!</strong> 7575 Norman Rockwell Ln, Bldg 2 Suite
-				120 | 702.123.4567
+				<strong>NOW OPEN!</strong> 7575 Norman Rockwell Ln, Suite 120 |
+				702.395.3349
 			</AnnouncementBar>
 			<Navigation links={navigationLinks} />
 			<main className={`${styles.PageTemplate} ${className}`}>
