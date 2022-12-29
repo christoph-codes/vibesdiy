@@ -47,16 +47,21 @@ const Home = ({ posts }) => {
 					columnGap={{ base: 0, sm: '6', md: '12' }}
 					flexDirection={{ base: 'column', sm: 'row' }}
 				>
-					<FlexCard cardColor='brand.primary.default'>
+					<FlexCard
+						link='/services/paint-pour'
+						cardColor='brand.primary.default'
+					>
 						Paint Pouring
 					</FlexCard>
 					<FlexCard
+						link='/services/hand-painting'
 						bgImage='/ceramic_paint_flex_card.png'
 						cardColor='brand.black.default'
 					>
 						Hand Painting
 					</FlexCard>
 					<FlexCard
+						link='/services/rug-tufting'
 						bgImage='/rug_tufting_flex_card.png'
 						cardColor='brand.secondary.default'
 					>
@@ -131,7 +136,7 @@ const Home = ({ posts }) => {
 				<Title textAlign='center' marginBottom={4}>
 					FAQs
 				</Title>
-				<Accordion items={homeFaqs} />
+				<Accordion items={homeFaqs} theme='quad' />
 			</Section>
 			{/** Instagram */}
 			<Section paddingTop={{ base: 0, md: '64px' }}>
