@@ -19,11 +19,13 @@ export interface IAccordionItem {
 export interface IAccordionProps {
 	items: IAccordionItem[];
 	style?: StyleProps;
+	theme?: 'primary' | 'secondary' | 'tertiary' | 'quad' | 'black';
 }
 
 const Accordion = ({
 	items,
 	style,
+	theme,
 	...rest
 }: IAccordionProps & AccordionProps) => {
 	return (
@@ -40,8 +42,8 @@ const Accordion = ({
 							paddingY={4}
 							fontWeight='bold'
 							_expanded={{
-								color: 'brand.quad.default',
-								backgroundColor: 'brand.quad.light',
+								color: `brand.${theme}.default`,
+								backgroundColor: `brand.${theme}.light`,
 								borderRadius: 8,
 							}}
 						>
