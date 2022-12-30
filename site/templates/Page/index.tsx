@@ -7,6 +7,7 @@ import AnnouncementBar from '../../components/AnnouncementBar';
 import Navigation from '../../components/Navigation';
 import { navigationLinks } from '../../utils/navLinks';
 import Footer from '../../components/Footer';
+import PoweredBy from '../../components/PoweredBy';
 
 export type PageProps = {
 	className?: string;
@@ -68,6 +69,7 @@ const PageTemplate: FC<PageProps> = ({
 				{children}
 			</main>
 			<Footer />
+			<PoweredBy />
 		</>
 	);
 };
