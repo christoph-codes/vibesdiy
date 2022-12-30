@@ -10,7 +10,7 @@ import Section from '../../components/Section';
 import Title from '../../components/Title';
 import PageTemplate from '../../templates/Page';
 import homeFaqs from '../../utils/content/homeFaqs';
-import { squareLink } from '../../utils/navLinks';
+import { bookLink } from '../../utils/navLinks';
 import styles from './Home.module.scss';
 
 const Home = ({ posts }) => {
@@ -37,7 +37,7 @@ const Home = ({ posts }) => {
 					space for
 					<br /> an experience like no other.
 				</Text>
-				<Button href={squareLink} variant='white'>
+				<Button href={bookLink} variant='white'>
 					Book Now
 				</Button>
 			</Hero>

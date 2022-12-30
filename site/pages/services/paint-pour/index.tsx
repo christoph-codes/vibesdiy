@@ -8,7 +8,7 @@ import Section from '../../../components/Section';
 import Title from '../../../components/Title';
 import PageTemplate from '../../../templates/Page';
 import homeFaqs from '../../../utils/content/homeFaqs';
-import { squareLink } from '../../../utils/navLinks';
+import { bookLink } from '../../../utils/navLinks';
 import styles from './PaintPouring.module.scss';
 
 const PaintPouring = () => {
@@ -49,7 +49,7 @@ const PaintPouring = () => {
 					</Box>
 				</Flex>
 				<Flex marginTop={{ base: 2, md: 8 }} justifyContent='center'>
-					<Button href={squareLink}>Book Now</Button>
+					<Button href={bookLink}>Book Now</Button>
 				</Flex>
 			</Section>
 			<Section

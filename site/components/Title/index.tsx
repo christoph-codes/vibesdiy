@@ -1,13 +1,6 @@
 import { Box, Heading, HeadingProps } from '@chakra-ui/react';
 import { ReactNode } from 'react';
-
-export type TEyebrow =
-	| 'primary'
-	| 'secondary'
-	| 'tertiary'
-	| 'quad'
-	| 'black'
-	| 'white';
+import Eyebrow, { TEyebrow } from '../Eyebrow';
 
 const headerSize = {
 	h1: '3xl',
@@ -63,14 +56,7 @@ const Title = ({
 				(chosenHeader === 'h1' ||
 					chosenHeader === 'h2' ||
 					chosenHeader === 'h3') && (
-					<Box
-						bg={`brand.${eyebrow}.default`}
-						width='72px'
-						height={2}
-						marginBottom={4}
-						borderRadius={8}
-						marginX={textAlign === 'center' && 'auto'}
-					/>
+					<Eyebrow color={eyebrow} align={textAlign} />
 				)}
 			<Heading
 				color='brand.black.default'
