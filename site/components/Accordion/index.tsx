@@ -37,7 +37,7 @@ const Accordion = ({
 		>
 			{items.map((item, index) => {
 				return (
-					<AccordionItem key={index}>
+					<AccordionItem key={index} border='none'>
 						<AccordionButton
 							paddingY={4}
 							fontWeight='bold'
