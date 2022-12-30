@@ -1,9 +1,4 @@
-import {
-	AnchorHTMLAttributes,
-	FC,
-	HTMLAttributeAnchorTarget,
-	ReactElement,
-} from 'react';
+import { HTMLAttributeAnchorTarget, ReactElement } from 'react';
 import styles from './Button.module.scss';
 
 export interface IButtonProps {
@@ -24,7 +19,7 @@ export interface IButtonProps {
 	href?: string;
 	fullWidth?: boolean;
 	target?: HTMLAttributeAnchorTarget;
-	rest?: any[];
+	type?: HTMLButtonElement['type'];
 }
 
 const Button = ({
@@ -34,12 +29,13 @@ const Button = ({
 	fullWidth,
 	href,
 	target,
+	type,
 	...rest
 }: IButtonProps) => {
 	const Tag: 'a' | 'button' = typeof href === 'string' ? 'a' : 'button';
 	return (
 		<Tag
-			type={!href ? 'button' : undefined}
+			type={href ? undefined : type === 'submit' ? type : 'button'}
 			href={href}
 			className={`${styles.Button} ${className} ${
 				variant ? styles[`Button__${variant}`] : ''
