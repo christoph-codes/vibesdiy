@@ -1,6 +1,6 @@
 import { INavigationProps } from "../components/Navigation";
 
-export const squareLink = 'https://squareup.com/appointments/buyer/widget/yow3ms7055ip18/L9QAGAMTXZ4C7';
+export const bookLink = '/book';
 
 const homepagePath: '/home' | '/' = '/home';
 
@@ -33,16 +33,22 @@ export const navigationLinks: INavigationProps["links"] = [
 	},
 	{
 		link: {
-			label: "Special Events",
-			path: "/special-events",
-		},
-	},
-	{
-		link: {
-			label: "Shop",
+			label: "Gallery",
 			path: "/gallery",
 		},
 	},
+	// {
+	// 	link: {
+	// 		label: "Special Events",
+	// 		path: "/special-events",
+	// 	},
+	// },
+	// {
+	// 	link: {
+	// 		label: "Shop",
+	// 		path: "/shop",
+	// 	},
+	// },
 	{
 		link: {
 			label: "About Us",
@@ -58,8 +64,7 @@ export const navigationLinks: INavigationProps["links"] = [
 	{
 		link: {
 			label: "Book Now",
-			path: squareLink,
-			target: "_blank",
+			path: bookLink,
 		},
 		cta: true,
 	},
