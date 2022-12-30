@@ -1,12 +1,4 @@
-import {
-	Flex,
-	Grid,
-	GridItem,
-	Image,
-	Text,
-	Wrap,
-	WrapItem,
-} from '@chakra-ui/react';
+import { Flex, Image, Text } from '@chakra-ui/react';
 import BookNow from '../components/BookNow';
 import Eyebrow from '../components/Eyebrow';
 import Hero from '../components/Hero';
