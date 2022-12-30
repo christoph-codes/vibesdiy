@@ -1,4 +1,13 @@
-import { Grid, GridItem, Image, Text } from '@chakra-ui/react';
+import {
+	Flex,
+	Grid,
+	GridItem,
+	Image,
+	Text,
+	Wrap,
+	WrapItem,
+} from '@chakra-ui/react';
+import BookNow from '../components/BookNow';
 import Eyebrow from '../components/Eyebrow';
 import Hero from '../components/Hero';
 import Section from '../components/Section';
@@ -6,18 +15,17 @@ import PageTemplate from '../templates/Page';
 
 const Gallery = () => {
 	const imageList = [
-		'/service_rug_tufting.png',
-		'/service_ceramic_painting.png',
-		'/service_paint_pouring.png',
-		'/service_rug_tufting.png',
-		'/service_ceramic_painting.png',
-		'/service_paint_pouring.png',
-		'/service_rug_tufting.png',
-		'/service_ceramic_painting.png',
-		'/service_paint_pouring.png',
-		'/service_rug_tufting.png',
-		'/service_ceramic_painting.png',
-		'/service_paint_pouring.png',
+		'/gallery/gallery_1.jpg',
+		'/gallery/gallery_2.jpg',
+		'/gallery/gallery_3.jpg',
+		'/gallery/gallery_4.jpg',
+		'/gallery/gallery_5.jpg',
+		'/gallery/gallery_6.jpg',
+		'/gallery/gallery_7.jpg',
+		'/gallery/gallery_8.jpg',
+		'/gallery/gallery_9.jpg',
+		'/gallery/gallery_10.jpg',
+		'/gallery/gallery_11.jpg',
 	];
 	const borderColor = [
 		'brand.primary.default',
@@ -26,6 +34,7 @@ const Gallery = () => {
 		'brand.quad.default',
 		'brand.black.default',
 	];
+	const ratios = ['60%', '30%', '30%'];
 	return (
 		<PageTemplate
 			metaTitle='Gallery » Vibes DIY Studio'
@@ -40,33 +49,35 @@ const Gallery = () => {
 				</Text>
 			</Section>
 			<Section paddingTop={0}>
-				<Grid
-					gap='24px'
-					gridColumn={3}
-					templateColumns='repeat(3, 1fr)'
-					flexWrap='wrap'
-				>
+				<Flex gap='24px' gridColumn={4} flexWrap='wrap'>
 					{imageList.map((image, index) => {
+						console.log(ratios[index]);
 						return (
-							<GridItem
-								as={Image}
-								colSpan={{
-									base: 3,
-									md: index % 3 === 0 ? 2 : 1,
-								}}
+							<Image
 								key={index}
 								src={image}
 								alt='Gallery Image'
-								w='100%'
 								borderRadius='16px'
 								borderWidth={4}
 								borderStyle='solid'
 								borderColor={borderColor[index % 5]}
+								objectFit='cover'
+								flexGrow={1}
+								flexShrink={0}
+								flexBasis={{
+									base: '100%',
+									md: ratios[index % 3],
+								}}
+								display='inline-block'
 							/>
 						);
 					})}
-				</Grid>
+				</Flex>
 			</Section>
+			<BookNow
+				title='Like What You See?'
+				description='Your creativity starts here. Schedule a time for paint pouring, hand painting or rug tufting today!'
+			/>
 		</PageTemplate>
 	);
 };
