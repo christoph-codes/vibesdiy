@@ -2,7 +2,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import { Box, Flex } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useSideNav } from '../../providers/SidenavProvider';
-import { squareLink } from '../../utils/navLinks';
+import { bookLink } from '../../utils/navLinks';
 import Container from '../Container';
 import Logo from '../Logo';
 import NavLink, { INavLinkProps, ILink } from '../NavLink';
@@ -43,8 +43,7 @@ const Navigation = ({ links, className }: INavigationProps) => {
 				<Box className={styles.Navigation__mobileNav}>
 					<NavLink
 						className={styles.Navigation__mobileCTA}
-						target='_blank'
-						href={squareLink}
+						href={bookLink}
 						cta
 					>
 						Book Now
