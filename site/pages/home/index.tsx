@@ -97,28 +97,35 @@ const Home = ({ posts }) => {
 					justifyContent='space-around'
 					alignItems='center'
 					columnGap='64px'
-					flexDirection={{ base: 'column', sm: 'row' }}
+					flexDirection={{ base: 'column', md: 'row' }}
 				>
 					<Box width='100%' marginBottom={{ base: 8, md: 0 }}>
 						<Image src='/product_features.png' alt='Paint Pour' />
 					</Box>
 					<Box width='100%'>
-						<Title
-							color='brand.quad.default'
-							h3
-							textAlign={{ base: 'center', md: 'left' }}
-						>{`Let's Get Creating`}</Title>
-						<Text>
-							{`With many options to choose from we take your favorite brands from pop culture and give you the tools to create a one of one creation that you can pride yourself in taking home. Popular on TikTok, you now have the opportunity to experience custom rug tufting at its finest, where you will learn how to create your own rug with 90+ color options so the possibilities are endless!`}
-						</Text>
-						<Text>
-							Also we offer paint pouring or hand painting with
-							all the colors you can think of over 20+ figures of
-							popular fashion and cartoon art pieces that makes
-							for a relaxing experience you’ll want to relive over
-							and over again.
-						</Text>
-						<Button>Learn More</Button>
+						<Flex
+							justifyContent='space-around'
+							alignItems={{ base: 'center', md: 'flex-start' }}
+							columnGap='64px'
+							flexDirection='column'
+						>
+							<Title
+								color='brand.quad.default'
+								h3
+								textAlign={{ base: 'center', md: 'left' }}
+							>{`Let's Get Creating`}</Title>
+							<Text>
+								{`With many options to choose from we take your favorite brands from pop culture and give you the tools to create a one of one creation that you can pride yourself in taking home. Popular on TikTok, you now have the opportunity to experience custom rug tufting at its finest, where you will learn how to create your own rug with 90+ color options so the possibilities are endless!`}
+							</Text>
+							<Text>
+								Also we offer paint pouring or hand painting
+								with all the colors you can think of over 20+
+								figures of popular fashion and cartoon art
+								pieces that makes for a relaxing experience
+								you’ll want to relive over and over again.
+							</Text>
+							<Button href='/services'>Learn More</Button>
+						</Flex>
 					</Box>
 				</Flex>
 			</Section>

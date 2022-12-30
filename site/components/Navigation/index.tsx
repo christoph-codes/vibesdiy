@@ -2,7 +2,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import { Box, Flex } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useSideNav } from '../../providers/SidenavProvider';
-import { bookLink } from '../../utils/navLinks';
+import { bookLink, homepagePath } from '../../utils/navLinks';
 import Container from '../Container';
 import Logo from '../Logo';
 import NavLink, { INavLinkProps, ILink } from '../NavLink';
@@ -22,7 +22,10 @@ const Navigation = ({ links, className }: INavigationProps) => {
 	return (
 		<Box as='nav' className={`${styles.Navigation} ${className || ''}`}>
 			<Container className={styles.Navigation__container}>
-				<Link className={styles.Navigation__logoContainer} href='/'>
+				<Link
+					className={styles.Navigation__logoContainer}
+					href={homepagePath}
+				>
 					<Logo className={styles.Navigation__logo} />
 				</Link>
 				<ul className={styles.Navigation__nav}>

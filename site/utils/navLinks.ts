@@ -5,7 +5,7 @@ export const facebookLink = 'https://www.facebook.com/profile.php?id=10008824293
 export const twitterLink = 'https://twitter.com/vibesdiystudio';
 export const instagramLink = 'https://www.instagram.com/vibesdiystudio/';
 
-const homepagePath: '/home' | '/' = '/home';
+export const homepagePath: '/home' | '/' = '/home';
 
 export const navigationLinks: INavigationProps["links"] = [
 	{
