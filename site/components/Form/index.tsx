@@ -57,7 +57,6 @@ const Form: FC<TFormProps> = ({
 	));
 	const [submitting, setSubmitting] = useState(false);
 	const submit = (e: ChangeEvent<HTMLFormElement>) => {
-		console.log('submitting');
 		e.preventDefault();
 		setSubmitting(true);
 
@@ -68,8 +67,8 @@ const Form: FC<TFormProps> = ({
 
 		setTimeout(() => {
 			setSubmitting(false);
-		}, 2000);
-		return onSubmit(emailSubmission);
+			onSubmit(emailSubmission);
+		}, 3000);
 	};
 
 	return (
@@ -78,15 +77,13 @@ const Form: FC<TFormProps> = ({
 			onSubmit={(e: ChangeEvent<HTMLFormElement>) => submit(e)}
 		>
 			{renderInputs}
-			<Button type='submit' {...submitButton}>
-				{submitting ? (
-					<>
-						<Loader marginRight={3} /> Loading{' '}
-					</>
-				) : (
-					submitButton.children
-				)}
-			</Button>
+			{submitting ? (
+				<Loader marginTop={8} isLoading={submitting} />
+			) : (
+				<Button type='submit' {...submitButton}>
+					{submitButton.children}
+				</Button>
+			)}
 		</form>
 	);
 };
