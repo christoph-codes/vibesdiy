@@ -1,4 +1,4 @@
-import { Box, HeadingProps } from '@chakra-ui/react';
+import { Box, BoxProps, HeadingProps } from '@chakra-ui/react';
 
 export type TEyebrow =
 	| 'primary'
@@ -13,7 +13,7 @@ export interface IEyebrowProps {
 	align?: HeadingProps['textAlign'];
 }
 
-const Eyebrow = ({ color, align }) => {
+const Eyebrow = ({ color, align, ...rest }: IEyebrowProps & BoxProps) => {
 	return (
 		<Box
 			bg={`brand.${color}.default`}
@@ -22,6 +22,7 @@ const Eyebrow = ({ color, align }) => {
 			marginBottom={4}
 			borderRadius={8}
 			marginX={align === 'center' && 'auto'}
+			{...rest}
 		/>
 	);
 };
