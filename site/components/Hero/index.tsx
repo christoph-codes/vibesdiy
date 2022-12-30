@@ -33,7 +33,12 @@ const Hero = ({
 			containerClass={containerClass}
 			{...rest}
 		>
-			<Title textAlign='center' color='white' textShadow='xl'>
+			<Title
+				className={styles.Hero__title}
+				textAlign='center'
+				color='white'
+				textShadow='2xl'
+			>
 				{title}
 			</Title>
 			{children}

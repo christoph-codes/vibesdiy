@@ -13,7 +13,11 @@ export interface IBookNowProps {
 
 const BookNow = ({ title, description }: IBookNowProps) => {
 	return (
-		<Section bgImage='/book_bg.png' containerClass={styles.BookNow}>
+		<Section
+			bgImage='/book_bg.png'
+			className={styles.BookNow}
+			containerClass={styles.BookNow__container}
+		>
 			<Title textAlign='center' color='white' h2>
 				{title}
 			</Title>
