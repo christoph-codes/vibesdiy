@@ -25,26 +25,27 @@ const PaintPouring = () => {
 					gap={{ base: 8, md: 16 }}
 					flexDirection={{ base: 'column', md: 'row' }}
 				>
-					<Box textAlign='center' paddingX='32px'>
+					<Box textAlign='center' paddingX='32px' width='50%'>
 						<Title h3 eyebrow='primary' textAlign='center'>
 							Easy to do
 						</Title>
 						<Text>
-							No two paint pour projects look the same. You may
-							use the same colors as the person next to you but
-							your own take and perspective will make them one of
-							a kind.
+							We supply you with endless colors to make your
+							figurine one of a kind. Squirt your paint into your
+							cup, don’t mix, and pour it’s that easy.
 						</Text>
 					</Box>
-					<Box textAlign='center' paddingX='32px'>
+					<Box textAlign='center' paddingX='32px' width='50%'>
 						<Title h3 eyebrow='primary' textAlign='center'>
 							Completely Unique
 						</Title>
 						<Text>
-							No two paint pour projects look the same. You may
-							use the same colors as the person next to you but
-							your own take and perspective will make them one of
-							a kind.
+							No two paint pour projects look the same and that’s
+							the beauty of this session. With endless color
+							options to choose from whether you want a marble
+							finish, paint splatter, or a trippy effect, pick
+							your favorite 3 colors and let this relaxing, fun
+							experience bring out the artist in you.
 						</Text>
 					</Box>
 				</Flex>

@@ -25,26 +25,25 @@ const RugTufting = () => {
 					gap={{ base: 8, md: 16 }}
 					flexDirection={{ base: 'column', md: 'row' }}
 				>
-					<Box textAlign='center' paddingX='32px'>
+					<Box textAlign='center' paddingX='32px' width='50%'>
 						<Title h3 eyebrow='secondary' textAlign='center'>
 							Easy to do
 						</Title>
 						<Text>
-							No two paint pour projects look the same. You may
-							use the same colors as the person next to you but
-							your own take and perspective will make them one of
-							a kind.
+							With an easy to follow tutorial by your instructor,
+							you will have the ability to choose your yarn and
+							start creating your rug.
 						</Text>
 					</Box>
-					<Box textAlign='center' paddingX='32px'>
+					<Box textAlign='center' paddingX='32px' width='50%'>
 						<Title h3 eyebrow='secondary' textAlign='center'>
 							Completely Unique
 						</Title>
 						<Text>
-							No two paint pour projects look the same. You may
-							use the same colors as the person next to you but
-							your own take and perspective will make them one of
-							a kind.
+							With over 90+ different colors of yarn, if you can
+							think it, trace it, you can make it. Here is to a
+							one of a kind rug to show off to your followers,
+							houseguests and friends.
 						</Text>
 					</Box>
 				</Flex>
