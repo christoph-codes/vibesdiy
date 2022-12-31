@@ -25,26 +25,25 @@ const HandPainting = () => {
 					gap={{ base: 8, md: 16 }}
 					flexDirection={{ base: 'column', md: 'row' }}
 				>
-					<Box textAlign='center' paddingX='32px'>
+					<Box textAlign='center' paddingX='32px' width='50%'>
 						<Title h3 eyebrow='black' textAlign='center'>
 							Easy to do
 						</Title>
 						<Text>
-							No two paint pour projects look the same. You may
-							use the same colors as the person next to you but
-							your own take and perspective will make them one of
-							a kind.
+							Choose your favorite pop culture item and bring out
+							your inner child. Choose your paint, get your
+							brushes, and enjoy as you paint your one of a kind
+							masterpiece.
 						</Text>
 					</Box>
-					<Box textAlign='center' paddingX='32px'>
+					<Box textAlign='center' paddingX='32px' width='50%'>
 						<Title h3 eyebrow='black' textAlign='center'>
 							Completely Unique
 						</Title>
 						<Text>
-							No two paint pour projects look the same. You may
-							use the same colors as the person next to you but
-							your own take and perspective will make them one of
-							a kind.
+							With over 50+ different figurines from purses,
+							sneakers, cartoon characters, and baseball hats the
+							possibilities are endless.
 						</Text>
 					</Box>
 				</Flex>
