@@ -116,7 +116,7 @@ const Contact = () => {
 							<br />
 							Las Vegas, NV, 89149
 							<br />
-							Located in the something something shopping center
+							Located in The Village of Centennial Springs
 						</Text>
 						<Title h5>Hours:</Title>
 						<Text>
@@ -127,7 +127,7 @@ const Contact = () => {
 							Sunday - Closed
 						</Text>
 						<Title h5>Phone:</Title>
-						<Text>702.123.4567</Text>
+						<Text>702.395.3349</Text>
 						<Flex gap={4}>
 							<Link href={facebookLink}>
 								<Icon

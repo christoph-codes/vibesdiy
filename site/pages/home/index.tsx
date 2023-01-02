@@ -78,7 +78,7 @@ const Home = ({ posts }) => {
 					The Premiere Creative Space
 				</Title>
 				<Text fontSize='xl' marginBottom={4}>
-					Located in Something Something Shopping Center.
+					Located in The Village of Centennial Springs
 					<br />
 					<Link
 						className='LINK'
