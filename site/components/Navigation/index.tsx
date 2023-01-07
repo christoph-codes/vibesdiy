@@ -1,5 +1,5 @@
 import { HamburgerIcon } from '@chakra-ui/icons';
-import { Box, Flex } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useSideNav } from '../../providers/SidenavProvider';
 import { bookLink, homepagePath } from '../../utils/navLinks';
