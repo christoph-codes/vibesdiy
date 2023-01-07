@@ -25,7 +25,11 @@ const RugTufting = () => {
 					gap={{ base: 8, md: 16 }}
 					flexDirection={{ base: 'column', md: 'row' }}
 				>
-					<Box textAlign='center' paddingX='32px' width='50%'>
+					<Box
+						textAlign='center'
+						paddingX='32px'
+						width={{ base: '100%', md: '50%' }}
+					>
 						<Title h3 eyebrow='secondary' textAlign='center'>
 							Easy to do
 						</Title>
@@ -35,7 +39,11 @@ const RugTufting = () => {
 							start creating your rug.
 						</Text>
 					</Box>
-					<Box textAlign='center' paddingX='32px' width='50%'>
+					<Box
+						textAlign='center'
+						paddingX='32px'
+						width={{ base: '100%', md: '50%' }}
+					>
 						<Title h3 eyebrow='secondary' textAlign='center'>
 							Completely Unique
 						</Title>

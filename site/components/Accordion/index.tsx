@@ -47,7 +47,12 @@ const Accordion = ({
 								borderRadius: 8,
 							}}
 						>
-							<Box as='span' flex='1' textAlign='left'>
+							<Box
+								as='span'
+								flex='1'
+								textAlign='left'
+								fontSize='lg'
+							>
 								{item.title}
 							</Box>
 

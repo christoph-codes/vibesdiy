@@ -25,7 +25,11 @@ const HandPainting = () => {
 					gap={{ base: 8, md: 16 }}
 					flexDirection={{ base: 'column', md: 'row' }}
 				>
-					<Box textAlign='center' paddingX='32px' width='50%'>
+					<Box
+						textAlign='center'
+						paddingX='32px'
+						width={{ base: '100%', md: '50%' }}
+					>
 						<Title h3 eyebrow='black' textAlign='center'>
 							Easy to do
 						</Title>
@@ -36,7 +40,11 @@ const HandPainting = () => {
 							masterpiece.
 						</Text>
 					</Box>
-					<Box textAlign='center' paddingX='32px' width='50%'>
+					<Box
+						textAlign='center'
+						paddingX='32px'
+						width={{ base: '100%', md: '50%' }}
+					>
 						<Title h3 eyebrow='black' textAlign='center'>
 							Completely Unique
 						</Title>
