@@ -25,7 +25,11 @@ const PaintPouring = () => {
 					gap={{ base: 8, md: 16 }}
 					flexDirection={{ base: 'column', md: 'row' }}
 				>
-					<Box textAlign='center' paddingX='32px' width='50%'>
+					<Box
+						textAlign='center'
+						paddingX='32px'
+						width={{ base: '100%', md: '50%' }}
+					>
 						<Title h3 eyebrow='primary' textAlign='center'>
 							Easy to do
 						</Title>
@@ -35,7 +39,11 @@ const PaintPouring = () => {
 							cup, don’t mix, and pour it’s that easy.
 						</Text>
 					</Box>
-					<Box textAlign='center' paddingX='32px' width='50%'>
+					<Box
+						textAlign='center'
+						paddingX='32px'
+						width={{ base: '100%', md: '50%' }}
+					>
 						<Title h3 eyebrow='primary' textAlign='center'>
 							Completely Unique
 						</Title>
