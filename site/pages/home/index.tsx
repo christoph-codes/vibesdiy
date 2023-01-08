@@ -1,17 +1,17 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react';
-import Link from 'next/link';
-import Accordion from '../../components/Accordion';
-import BookNow from '../../components/BookNow';
-import Button from '../../components/Button';
-import FlexCard from '../../components/FlexCard';
-import Hero from '../../components/Hero';
-import InstagramFeed from '../../components/InstagramFeed';
-import Section from '../../components/Section';
-import Title from '../../components/Title';
-import PageTemplate from '../../templates/Page';
-import homeFaqs from '../../utils/content/homeFaqs';
-import { bookLink } from '../../utils/navLinks';
-import styles from './Home.module.scss';
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import Link from "next/link";
+import Accordion from "../../components/Accordion";
+import BookNow from "../../components/BookNow";
+import Button from "../../components/Button";
+import FlexCard from "../../components/FlexCard";
+import Hero from "../../components/Hero";
+import InstagramFeed from "../../components/InstagramFeed";
+import Section from "../../components/Section";
+import Title from "../../components/Title";
+import PageTemplate from "../../templates/Page";
+import homeFaqs from "../../utils/content/homeFaqs";
+import { bookLink } from "../../utils/navLinks";
+import styles from "./Home.module.scss";
 
 const Home = ({ posts }) => {
 	return (
@@ -19,100 +19,101 @@ const Home = ({ posts }) => {
 			<Hero
 				className={styles.Home__hero}
 				home
-				bgImg='/bg.png'
+				bgImg="/bg.png"
 				containerClass={styles.Home__heroContainer}
-				borderBottomColor='brand.black.default'
+				borderBottomColor="brand.black.default"
 				borderBottomWidth={6}
-				borderBottomStyle='solid'
-				title='DIY in Style'
+				borderBottomStyle="solid"
+				title="DIY in Style"
 			>
 				<Text
-					fontWeight='bold'
-					lineHeight='30px'
+					fontWeight="bold"
+					lineHeight="30px"
 					marginBottom={4}
 					fontSize={24}
-					color='white'
+					color="white"
 				>
 					From start to finish immerse yourself into this creative
 					space for
 					<br /> an experience like no other.
 				</Text>
-				<Button href={bookLink} variant='white'>
+				<Button href={bookLink} variant="white">
 					Book Now
 				</Button>
 			</Hero>
-			<Section marginTop={{ base: '-30px', md: '-60px' }} paddingTop={0}>
+			<Section marginTop={{ base: "-30px", md: "-60px" }} paddingTop={0}>
 				<Flex
-					justifyContent='center'
-					columnGap={{ base: 0, sm: '6', md: '12' }}
-					flexDirection={{ base: 'column', sm: 'row' }}
+					justifyContent="center"
+					columnGap={{ base: 0, sm: "6", md: "12" }}
+					flexDirection={{ base: "column", sm: "row" }}
 				>
 					<FlexCard
-						link='/services/paint-pour'
-						cardColor='brand.primary.default'
+						link="/services/paint-pour"
+						bgImage="/pour1.jpg"
+						cardColor="brand.primary.default"
 					>
 						Paint Pouring
 					</FlexCard>
 					<FlexCard
-						link='/services/hand-painting'
-						bgImage='/ceramic_paint_flex_card.png'
-						cardColor='brand.black.default'
+						link="/services/hand-painting"
+						bgImage="/handpaint2.jpg"
+						cardColor="brand.black.default"
 					>
 						Hand Painting
 					</FlexCard>
 					<FlexCard
-						link='/services/rug-tufting'
-						bgImage='/rug_tufting_flex_card.png'
-						cardColor='brand.secondary.default'
+						link="/services/rug-tufting"
+						bgImage="/tufting5.jpg"
+						cardColor="brand.secondary.default"
 					>
 						Rug Tufting
 					</FlexCard>
 				</Flex>
 			</Section>
 			<Section
-				textAlign='center'
+				textAlign="center"
 				containerClass={styles.Home__located}
 				paddingTop={0}
 			>
-				<Title h2 textAlign='center'>
+				<Title h2 textAlign="center">
 					The Premiere Creative Space
 				</Title>
-				<Text fontSize='xl' marginBottom={4}>
+				<Text fontSize="xl" marginBottom={4}>
 					Located in The Village of Centennial Springs
 					<br />
 					<Link
-						className='LINK'
-						href='https://goo.gl/maps/Lr47ZATSsNbsaMXf6'
+						className="LINK"
+						href="https://goo.gl/maps/Lr47ZATSsNbsaMXf6"
 					>
 						7557 Norman Rockwell Ln, Bldg 2 Suite 120
 					</Link>
 				</Text>
-				<Button href='/location'>Come Visit Us</Button>
+				<Button href="/location">Come Visit Us</Button>
 			</Section>
 			<Section
-				bgColor='brand.quad.light'
+				bgColor="brand.quad.light"
 				containerClass={styles.Home__featured}
 			>
 				<Flex
-					justifyContent='space-around'
-					alignItems='center'
-					columnGap='64px'
-					flexDirection={{ base: 'column', md: 'row' }}
+					justifyContent="space-around"
+					alignItems="center"
+					columnGap="64px"
+					flexDirection={{ base: "column", md: "row" }}
 				>
-					<Box width='100%' marginBottom={{ base: 8, md: 0 }}>
-						<Image src='/product_features.png' alt='Paint Pour' />
+					<Box width="100%" marginBottom={{ base: 8, md: 0 }}>
+						<Image src="/product_features.png" alt="Paint Pour" />
 					</Box>
-					<Box width='100%'>
+					<Box width="100%">
 						<Flex
-							justifyContent='space-around'
-							alignItems={{ base: 'center', md: 'flex-start' }}
-							columnGap='64px'
-							flexDirection='column'
+							justifyContent="space-around"
+							alignItems={{ base: "center", md: "flex-start" }}
+							columnGap="64px"
+							flexDirection="column"
 						>
 							<Title
-								color='brand.quad.default'
+								color="brand.quad.default"
 								h3
-								textAlign={{ base: 'center', md: 'left' }}
+								textAlign={{ base: "center", md: "left" }}
 							>{`Let's Get Creating`}</Title>
 							<Text>
 								{`With many options to choose from we take your favorite brands from pop culture and give you the tools to create a one of one creation that you can pride yourself in taking home. Popular on TikTok, you now have the opportunity to experience custom rug tufting at its finest, where you will learn how to create your own rug with 90+ color options so the possibilities are endless!`}
@@ -124,13 +125,13 @@ const Home = ({ posts }) => {
 								pieces that makes for a relaxing experience
 								you’ll want to relive over and over again.
 							</Text>
-							<Button href='/services'>Learn More</Button>
+							<Button href="/services">Learn More</Button>
 						</Flex>
 					</Box>
 				</Flex>
 			</Section>
 			<BookNow
-				title='Book A Session Today'
+				title="Book A Session Today"
 				description={
 					<>
 						Ready to jump into your creative experience?
@@ -140,14 +141,14 @@ const Home = ({ posts }) => {
 			/>
 			{/** FAQs */}
 			<Section containerClass={styles.Home__faq}>
-				<Title textAlign='center' marginBottom={4}>
+				<Title textAlign="center" marginBottom={4}>
 					FAQs
 				</Title>
-				<Accordion items={homeFaqs} theme='quad' />
+				<Accordion items={homeFaqs} theme="quad" />
 			</Section>
 			{/** Instagram */}
-			<Section paddingTop={{ base: 0, md: '64px' }}>
-				<Title textAlign='center' marginBottom={8}>
+			<Section paddingTop={{ base: 0, md: "64px" }}>
+				<Title textAlign="center" marginBottom={8}>
 					Follow Us On Instagram
 				</Title>
 				<InstagramFeed />
