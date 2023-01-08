@@ -1,33 +1,33 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react';
-import BookNow from '../../components/BookNow';
-import Button from '../../components/Button';
-import Hero from '../../components/Hero';
-import Section from '../../components/Section';
-import Title from '../../components/Title';
-import PageTemplate from '../../templates/Page';
-import styles from './Services.module.scss';
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import BookNow from "../../components/BookNow";
+import Button from "../../components/Button";
+import Hero from "../../components/Hero";
+import Section from "../../components/Section";
+import Title from "../../components/Title";
+import PageTemplate from "../../templates/Page";
+import styles from "./Services.module.scss";
 
 const Services = () => {
 	return (
 		<PageTemplate
-			metaTitle='Services » Vibes DIY Studio'
-			metaDescription='Services offered by Vibes DIY Studio include creative paint pouring, custom ceramic pot painting, and rug tufting. Get in touch with us today!'
+			metaTitle="Services » Vibes DIY Studio"
+			metaDescription="Services offered by Vibes DIY Studio include creative paint pouring, custom ceramic pot painting, and rug tufting. Get in touch with us today!"
 			className={styles.Services}
 		>
-			<Hero bgImg='/service_bg.png' title='DIY Services' />
+			<Hero bgImg="/services1.jpg" title="DIY Services" />
 			<Section containerClass={`${styles.Services__service}`}>
 				<Flex
-					justifyContent='space-around'
-					alignItems='center'
-					columnGap={{ base: '64px', md: '128px' }}
-					flexDirection={{ base: 'column', md: 'row' }}
+					justifyContent="space-around"
+					alignItems="center"
+					columnGap={{ base: "64px", md: "128px" }}
+					flexDirection={{ base: "column", md: "row" }}
 				>
 					<Image
-						src='/service_paint_pouring.png'
-						alt='Paint Pouring Kaw Bear Figurines'
+						src="/pour1.jpg"
+						alt="Paint Pouring Kaw Bear Figurines"
 					/>
 					<Box marginTop={{ base: 8, md: 0 }}>
-						<Title h2 eyebrow='primary'>
+						<Title h2 eyebrow="primary">
 							Paint Pouring
 						</Title>
 						<Text>
@@ -37,7 +37,7 @@ const Services = () => {
 							fashion and cartoon art pieces, pick your figurine
 							and get to pouring!
 						</Text>
-						<Button href='/services/paint-pour'>Learn More</Button>
+						<Button href="/services/paint-pour">Learn More</Button>
 					</Box>
 				</Flex>
 			</Section>
@@ -46,13 +46,13 @@ const Services = () => {
 				containerClass={`${styles.Services__service}`}
 			>
 				<Flex
-					justifyContent='space-around'
-					alignItems='center'
-					columnGap={{ base: '64px', md: '128px' }}
-					flexDirection={{ base: 'column-reverse', md: 'row' }}
+					justifyContent="space-around"
+					alignItems="center"
+					columnGap={{ base: "64px", md: "128px" }}
+					flexDirection={{ base: "column-reverse", md: "row" }}
 				>
 					<Box marginTop={{ base: 8, md: 0 }}>
-						<Title h2 eyebrow='black'>
+						<Title h2 eyebrow="black">
 							Hand Painting
 						</Title>
 						<Text>
@@ -62,13 +62,13 @@ const Services = () => {
 							tables to display proudly or wherever you choose.
 							Pick your piece and get to painting!
 						</Text>
-						<Button variant='black' href='/services/hand-painting'>
+						<Button variant="black" href="/services/hand-painting">
 							Learn More
 						</Button>
 					</Box>
 					<Image
-						src='/service_ceramic_painting.png'
-						alt='Hand Painting a Ceramic Pot on a table'
+						src="/handpaint2.jpg"
+						alt="Hand Painting a Ceramic Pot on a table"
 					/>
 				</Flex>
 			</Section>
@@ -77,17 +77,17 @@ const Services = () => {
 				containerClass={`${styles.Services__service}`}
 			>
 				<Flex
-					justifyContent='space-around'
-					alignItems='center'
-					columnGap={{ base: '64px', md: '128px' }}
-					flexDirection={{ base: 'column', md: 'row' }}
+					justifyContent="space-around"
+					alignItems="center"
+					columnGap={{ base: "64px", md: "128px" }}
+					flexDirection={{ base: "column", md: "row" }}
 				>
 					<Image
-						src='/service_rug_tufting.png'
-						alt='Painting a Ceramic Pot on a table'
+						src="/tufting1.jpg"
+						alt="Painting a Ceramic Pot on a table"
 					/>
 					<Box marginTop={{ base: 8, md: 0 }}>
-						<Title h2 eyebrow='secondary'>
+						<Title h2 eyebrow="secondary">
 							Rug Tufting
 						</Title>
 						<Text>
@@ -99,8 +99,8 @@ const Services = () => {
 							Pick your yarn and get to tufting!
 						</Text>
 						<Button
-							variant='secondary'
-							href='/services/rug-tufting'
+							variant="secondary"
+							href="/services/rug-tufting"
 						>
 							Learn More
 						</Button>
@@ -108,8 +108,8 @@ const Services = () => {
 				</Flex>
 			</Section>
 			<BookNow
-				title='Love it all?'
-				description='Pick one of the services above and pay to lock in your spot to come in to experience your next creation.'
+				title="Love it all?"
+				description="Pick one of the services above and pay to lock in your spot to come in to experience your next creation."
 			/>
 		</PageTemplate>
 	);
