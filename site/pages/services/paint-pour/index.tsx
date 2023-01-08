@@ -1,36 +1,36 @@
-import { Flex, Text, Box, Image } from '@chakra-ui/react';
-import Accordion from '../../../components/Accordion';
-import BookNow from '../../../components/BookNow';
-import Button from '../../../components/Button';
-import Hero from '../../../components/Hero';
-import Review from '../../../components/Review';
-import Section from '../../../components/Section';
-import Title from '../../../components/Title';
-import PageTemplate from '../../../templates/Page';
-import homeFaqs from '../../../utils/content/homeFaqs';
-import { bookLink } from '../../../utils/navLinks';
-import styles from './PaintPouring.module.scss';
+import { Flex, Text, Box, Image } from "@chakra-ui/react";
+import Accordion from "../../../components/Accordion";
+import BookNow from "../../../components/BookNow";
+import Button from "../../../components/Button";
+import Hero from "../../../components/Hero";
+import Review from "../../../components/Review";
+import Section from "../../../components/Section";
+import Title from "../../../components/Title";
+import PageTemplate from "../../../templates/Page";
+import homeFaqs from "../../../utils/content/homeFaqs";
+import { bookLink } from "../../../utils/navLinks";
+import styles from "./PaintPouring.module.scss";
 
 const PaintPouring = () => {
 	return (
 		<PageTemplate
-			metaTitle='Paint Pouring » Vibes DIY Studio'
-			metaDescription='The paint pouring experience gives you, the artist, a unique, relaxing session using all the colors you can think of.'
+			metaTitle="Paint Pouring » Vibes DIY Studio"
+			metaDescription="The paint pouring experience gives you, the artist, a unique, relaxing session using all the colors you can think of."
 		>
-			<Hero title='Paint Pouring' bgImg='/paint_pour_bg.png' />
+			<Hero title="Paint Pouring" bgImg="/paint_pour_bg.png" />
 			<Section>
 				<Flex
-					justifyContent='space-between'
-					alignItems='center'
+					justifyContent="space-between"
+					alignItems="center"
 					gap={{ base: 8, md: 16 }}
-					flexDirection={{ base: 'column', md: 'row' }}
+					flexDirection={{ base: "column", md: "row" }}
 				>
 					<Box
-						textAlign='center'
-						paddingX='32px'
-						width={{ base: '100%', md: '50%' }}
+						textAlign="center"
+						paddingX="32px"
+						width={{ base: "100%", md: "50%" }}
 					>
-						<Title h3 eyebrow='primary' textAlign='center'>
+						<Title h3 eyebrow="primary" textAlign="center">
 							Easy to do
 						</Title>
 						<Text>
@@ -40,11 +40,11 @@ const PaintPouring = () => {
 						</Text>
 					</Box>
 					<Box
-						textAlign='center'
-						paddingX='32px'
-						width={{ base: '100%', md: '50%' }}
+						textAlign="center"
+						paddingX="32px"
+						width={{ base: "100%", md: "50%" }}
 					>
-						<Title h3 eyebrow='primary' textAlign='center'>
+						<Title h3 eyebrow="primary" textAlign="center">
 							Completely Unique
 						</Title>
 						<Text>
@@ -57,7 +57,7 @@ const PaintPouring = () => {
 						</Text>
 					</Box>
 				</Flex>
-				<Flex marginTop={{ base: 2, md: 8 }} justifyContent='center'>
+				<Flex marginTop={{ base: 2, md: 8 }} justifyContent="center">
 					<Button href={bookLink}>Book Now</Button>
 				</Flex>
 			</Section>
@@ -65,48 +65,48 @@ const PaintPouring = () => {
 				containerClass={styles.PaintPouring__gallery}
 				paddingTop={0}
 			>
-				<Flex flexDir='column' alignItems='center'>
+				<Flex flexDir="column" alignItems="center">
 					<Flex
 						gap={6}
-						flexDirection={{ base: 'column', md: 'row' }}
-						alignItems='center'
-						justifyContent='center'
+						flexDirection={{ base: "column", md: "row" }}
+						alignItems="center"
+						justifyContent="center"
 						marginBottom={8}
 					>
 						<Image
-							src='/service_paint_pouring.png'
-							alt='Paint Pouring is amazing'
+							src="/service_paint_pouring.png"
+							alt="Paint Pouring is amazing"
 						/>
 						<Image
-							src='/service_paint_pouring.png'
-							alt='Paint Pouring is amazing'
+							src="/services2.jpg"
+							alt="Paint Pouring is amazing"
 						/>
 						<Image
-							src='/service_paint_pouring.png'
-							alt='Paint Pouring is amazing'
+							src="/pour1.jpg"
+							alt="Paint Pouring is amazing"
 						/>
 					</Flex>
-					<Button href='/gallery' variant='primary-outline'>
+					<Button href="/gallery" variant="primary-outline">
 						View Full Gallery
 					</Button>
 				</Flex>
 			</Section>
 			{/* Review Block */}
 			<Review
-				theme='primary'
-				review='The most fun I’ve had in a long time. I’m inviting all my girls and
-were going back!'
-				author='Tina S.'
-				headshot='/tinas_headshot_review.png'
+				theme="primary"
+				review="The most fun I’ve had in a long time. I’m inviting all my girls and
+were going back!"
+				author="Tina S."
+				headshot="/tinas_headshot_review.png"
 			/>
-			<Section title='FAQs'>
-				<Accordion items={homeFaqs} theme='primary' />
+			<Section title="FAQs">
+				<Accordion items={homeFaqs} theme="primary" />
 			</Section>
 			<BookNow
-				title='Book Your Paint Pouring Session Today!'
-				description='With over 20+ figures of popular
+				title="Book Your Paint Pouring Session Today!"
+				description="With over 20+ figures of popular
 							fashion and cartoon art pieces, pick your figurine
-							and get to pouring!'
+							and get to pouring!"
 			/>
 		</PageTemplate>
 	);

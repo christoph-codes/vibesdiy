@@ -1,0 +1,11 @@
+.RugTufting {
+	&__gallery {
+		img {
+			max-width: 33%;
+			transition: transform 0.15s ease-in-out;
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
