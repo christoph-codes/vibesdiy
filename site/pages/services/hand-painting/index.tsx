@@ -8,6 +8,7 @@ import Section from "../../../components/Section";
 import Title from "../../../components/Title";
 import PageTemplate from "../../../templates/Page";
 import homeFaqs from "../../../utils/content/homeFaqs";
+import paintingFaqs from "../../../utils/content/paintingFaqs";
 import { bookLink } from "../../../utils/navLinks";
 import styles from "./HandPainting.module.scss";
 
@@ -98,7 +99,7 @@ were going back!"
 				headshot="/tinas_headshot_review.png"
 			/>
 			<Section title="FAQs">
-				<Accordion items={homeFaqs} theme="black" />
+				<Accordion items={paintingFaqs} theme="black" />
 			</Section>
 			<BookNow
 				title="Book Your Hand Painting Session Today!"

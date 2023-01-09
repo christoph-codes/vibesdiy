@@ -8,6 +8,7 @@ import Section from "../../../components/Section";
 import Title from "../../../components/Title";
 import PageTemplate from "../../../templates/Page";
 import homeFaqs from "../../../utils/content/homeFaqs";
+import paintPourFaqs from "../../../utils/content/paintPourFaqs";
 import { bookLink } from "../../../utils/navLinks";
 import styles from "./PaintPouring.module.scss";
 
@@ -100,7 +101,7 @@ were going back!"
 				headshot="/tinas_headshot_review.png"
 			/>
 			<Section title="FAQs">
-				<Accordion items={homeFaqs} theme="primary" />
+				<Accordion items={paintPourFaqs} theme="primary" />
 			</Section>
 			<BookNow
 				title="Book Your Paint Pouring Session Today!"

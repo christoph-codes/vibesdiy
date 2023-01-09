@@ -8,6 +8,7 @@ import Section from "../../../components/Section";
 import Title from "../../../components/Title";
 import PageTemplate from "../../../templates/Page";
 import homeFaqs from "../../../utils/content/homeFaqs";
+import tuftingFaqs from "../../../utils/content/tuftingFaqs";
 import { bookLink } from "../../../utils/navLinks";
 import styles from "./RugTufting.module.scss";
 
@@ -95,7 +96,7 @@ were going back!"
 				headshot="/tinas_headshot_review.png"
 			/>
 			<Section title="FAQs">
-				<Accordion items={homeFaqs} theme="secondary" />
+				<Accordion items={tuftingFaqs} theme="secondary" />
 			</Section>
 			<BookNow
 				title="Book Your Rug Tufting Session Today!"
