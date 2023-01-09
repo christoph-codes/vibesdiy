@@ -141,10 +141,19 @@ const Home = ({ posts }) => {
 			/>
 			{/** FAQs */}
 			<Section containerClass={styles.Home__faq}>
-				<Title textAlign="center" marginBottom={4}>
+				<Title textAlign="center" marginBottom="48px">
 					FAQs
 				</Title>
-				<Accordion items={homeFaqs} theme="quad" />
+				<Accordion
+					items={homeFaqs.slice(0, 5)}
+					theme="quad"
+					marginBottom="32px"
+				/>
+				<Flex justifyContent="center">
+					<Button variant="quad-outline" href="/faqs">
+						View All FAQs
+					</Button>
+				</Flex>
 			</Section>
 			{/** Instagram */}
 			<Section paddingTop={{ base: 0, md: "64px" }}>
