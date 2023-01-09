@@ -18,35 +18,36 @@ const About = () => {
 					flexDirection={{ base: "column", md: "row" }}
 				>
 					<Box width={{ base: "100%", md: "50%" }}>
+						<Image
+							src="/vibes_seo.png"
+							alt="Image of the owners of Vibes DIY Studio"
+							flexGrow={1}
+							flexShrink={1}
+							marginBottom={{ base: 8, md: 0 }}
+							height="auto"
+						/>
+					</Box>
+					<Box width={{ base: "100%", md: "50%" }}>
 						<Title h2>About Vibes DIY Studio</Title>
 						<Text lineHeight="7">
-							Like lots of others during the 2020 pandemic, we
-							experienced many positives and some negatives in
-							life. After many years and longer days working
-							remote at a desk and in front of the computer, lots
-							of medical testing, I learned sitting 8+ hours a day
-							until retirement was not going to be any good for
-							me. I decided that in 2022 I was going to set a goal
-							and depend on prayer to guide me to do something
-							different. I get a creative itch regularly and want
-							to do some type of DIY project. I always thought if
-							I could do what I wanted and be happy I would be
-							able to create and see others happy as well.
+							Las Vegas doesn’t have many creative spaces in the
+							northwest valley for the next generation. What
+							started as a prayer for the family to find a
+							creative space to bring our business ideas to life.
+							We took our love for diy projects, fashion, pop
+							culture, and creative outlets to birth “Vibes Diy
+							Studio.”
 						</Text>
 						<Text lineHeight="7">
-							Once deciding to take the leap of faith and
-							brainstorming with my daughter we came up with
-							Vibes. After watching many TikTok videos, we tried
-							our hand at rug tufting and haven’t looked back.
-							What better to have a creative space for people to
-							come and be happy and express their creative vibe.
-							My daughter Cooper and her husband CJ are creatives
-							themselves. Combining Kenzie Rae and to be able to
-							create with them has been a joy. Anything for the
-							grand babies, as you may see them growing up in the
-							studio. Can’t wait to see all our friends and family
-							come through and all of you we don’t even know yet.
-							Cheers to 2023. Happy New Year.
+							Searching the internet & scrolling through TikTok we
+							located cities on the east coast and overseas
+							countries that had businesses that did solely rug
+							tufting or paint pouring, but not both experiences
+							in one location. That’s where “Vibes” comes in, we
+							took multiple experiences and put our twist on it,
+							to give Las Vegas a creative space for all
+							generations to come and express themselves through
+							art.
 						</Text>
 					</Box>
 				</Flex>
