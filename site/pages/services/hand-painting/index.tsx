@@ -72,7 +72,7 @@ const HandPainting = () => {
 						marginBottom={8}
 					>
 						<Image
-							src="/handpaint5.jpg"
+							src="/handpaint6.png"
 							alt="Hand Painting is amazing"
 						/>
 						<Image
