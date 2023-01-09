@@ -6,7 +6,7 @@ export const facebookLink =
 export const twitterLink = "https://twitter.com/vibesdiystudio";
 export const instagramLink = "https://www.instagram.com/vibesdiystudio/";
 
-export const homepagePath: "/home" | "/" = "/home";
+export const homepagePath: "/home" | "/" = "/";
 
 export const navigationLinks: INavigationProps["links"] = [
 	{
