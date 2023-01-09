@@ -7,7 +7,6 @@ import Review from "../../../components/Review";
 import Section from "../../../components/Section";
 import Title from "../../../components/Title";
 import PageTemplate from "../../../templates/Page";
-import homeFaqs from "../../../utils/content/homeFaqs";
 import paintingFaqs from "../../../utils/content/paintingFaqs";
 import { bookLink } from "../../../utils/navLinks";
 import styles from "./HandPainting.module.scss";
