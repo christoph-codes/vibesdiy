@@ -6,6 +6,9 @@
 			&:hover {
 				transform: scale(1.1);
 			}
+			@media(max-width:30em) {
+				max-width: 100%;
+			}
 		}
 	}
 }
