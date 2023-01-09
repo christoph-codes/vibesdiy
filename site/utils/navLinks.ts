@@ -1,11 +1,12 @@
 import { INavigationProps } from "../components/Navigation";
 
-export const bookLink = '/book';
-export const facebookLink = 'https://www.facebook.com/profile.php?id=100088242930394';
-export const twitterLink = 'https://twitter.com/vibesdiystudio';
-export const instagramLink = 'https://www.instagram.com/vibesdiystudio/';
+export const bookLink = "/book";
+export const facebookLink =
+	"https://www.facebook.com/profile.php?id=100088242930394";
+export const twitterLink = "https://twitter.com/vibesdiystudio";
+export const instagramLink = "https://www.instagram.com/vibesdiystudio/";
 
-export const homepagePath: '/home' | '/' = '/home';
+export const homepagePath: "/home" | "/" = "/home";
 
 export const navigationLinks: INavigationProps["links"] = [
 	{
@@ -54,6 +55,12 @@ export const navigationLinks: INavigationProps["links"] = [
 	// },
 	{
 		link: {
+			label: "FAQs",
+			path: "/faqs",
+		},
+	},
+	{
+		link: {
 			label: "About Us",
 			path: "/about",
 		},
@@ -86,4 +93,4 @@ export const utilityLinks: INavigationProps["links"] = [
 			path: "/terms",
 		},
 	},
-]
+];
