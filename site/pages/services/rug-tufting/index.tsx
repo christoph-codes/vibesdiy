@@ -89,10 +89,9 @@ const RugTufting = () => {
 			{/* Review Block */}
 			<Review
 				theme="secondary"
-				review="The most fun I’ve had in a long time. I’m inviting all my girls and
-were going back!"
-				author="Tina S."
-				headshot="/tinas_headshot_review.png"
+				review="Way easier to do than I thought, but my rug turned out FIRE! 🔥"
+				author="Christoph J."
+				headshot="/christophj_headshot_review.jpg"
 			/>
 			<Section title="FAQs">
 				<Accordion items={tuftingFaqs} theme="secondary" />

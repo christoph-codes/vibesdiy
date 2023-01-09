@@ -92,10 +92,9 @@ const HandPainting = () => {
 			{/* Review Block */}
 			<Review
 				theme="black"
-				review="The most fun I’ve had in a long time. I’m inviting all my girls and
-were going back!"
-				author="Tina S."
-				headshot="/tinas_headshot_review.png"
+				review="It can be so therapeutic just listening to music and painting and to my surprise it actually turned out pretty nice."
+				author="Shannon T."
+				headshot="/shannons_review_photo.png"
 			/>
 			<Section title="FAQs">
 				<Accordion items={paintingFaqs} theme="black" />
