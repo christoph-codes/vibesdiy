@@ -7,7 +7,6 @@ import Review from "../../../components/Review";
 import Section from "../../../components/Section";
 import Title from "../../../components/Title";
 import PageTemplate from "../../../templates/Page";
-import homeFaqs from "../../../utils/content/homeFaqs";
 import tuftingFaqs from "../../../utils/content/tuftingFaqs";
 import { bookLink } from "../../../utils/navLinks";
 import styles from "./RugTufting.module.scss";
@@ -22,7 +21,7 @@ const RugTufting = () => {
 			<Section>
 				<Flex
 					justifyContent="space-between"
-					alignItems="center"
+					alignItems="flex-start"
 					gap={{ base: 8, md: 16 }}
 					flexDirection={{ base: "column", md: "row" }}
 				>

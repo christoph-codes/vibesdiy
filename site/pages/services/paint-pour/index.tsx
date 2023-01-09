@@ -22,7 +22,7 @@ const PaintPouring = () => {
 			<Section>
 				<Flex
 					justifyContent="space-between"
-					alignItems="center"
+					alignItems="flex-start"
 					gap={{ base: 8, md: 16 }}
 					flexDirection={{ base: "column", md: "row" }}
 				>
