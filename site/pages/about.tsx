@@ -18,19 +18,9 @@ const About = () => {
 					flexDirection={{ base: "column", md: "row" }}
 				>
 					<Box width={{ base: "100%", md: "50%" }}>
-						<Image
-							src="/about_team.png"
-							alt="Image of the owners of Vibes DIY Studio"
-							flexGrow={1}
-							flexShrink={1}
-							marginBottom={{ base: 8, md: 0 }}
-							height="auto"
-						/>
-					</Box>
-					<Box width={{ base: "100%", md: "50%" }}>
 						<Title h2>About Vibes DIY Studio</Title>
 						<Text lineHeight="7">
-							Like lots of others during the 2020 pandemic, I
+							Like lots of others during the 2020 pandemic, we
 							experienced many positives and some negatives in
 							life. After many years and longer days working
 							remote at a desk and in front of the computer, lots
