@@ -85,7 +85,7 @@ const Home = () => {
 						className="LINK"
 						href="https://goo.gl/maps/Lr47ZATSsNbsaMXf6"
 					>
-						7557 Norman Rockwell Ln, Bldg 2 Suite 120
+						7575 Norman Rockwell Ln, Suite 120
 					</Link>
 				</Text>
 				<Button href="/location">Come Visit Us</Button>
