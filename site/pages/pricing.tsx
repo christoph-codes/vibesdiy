@@ -13,7 +13,7 @@ const Pricing = () => {
 			<Hero title="Price List" bgImg="/about_bg.png" />
 			<Section>
 				<Text textAlign="center">
-					Our pricing structure is updated regularaly and showcases
+					Our pricing structure is updated regularly and showcases
 					all of prices of the items purchased with our services.
 				</Text>
 				<Image
