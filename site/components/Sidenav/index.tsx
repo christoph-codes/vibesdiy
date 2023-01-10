@@ -1,9 +1,15 @@
 import { FC } from "react";
 import Link from "next/link";
-import { navigationLinks } from "../../utils/navLinks";
+import {
+	facebookLink,
+	instagramLink,
+	navigationLinks,
+} from "../../utils/navLinks";
 import styles from "./Sidenav.module.scss";
-import { CloseIcon } from "@chakra-ui/icons";
+import { CloseIcon, Icon } from "@chakra-ui/icons";
 import NavLink from "../NavLink";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { Flex } from "@chakra-ui/react";
 
 export type TSideNav = {
 	isOpen?: boolean;
@@ -42,6 +48,14 @@ const SideNav: FC<TSideNav> = ({
 				{item.link.label}
 			</NavLink>
 		))}
+		<Flex justifyContent="center">
+			<NavLink href={facebookLink}>
+				<Icon boxSize={8} as={FaFacebook} />
+			</NavLink>
+			<NavLink href={instagramLink}>
+				<Icon boxSize={8} as={FaInstagram} />
+			</NavLink>
+		</Flex>
 	</aside>
 );
 

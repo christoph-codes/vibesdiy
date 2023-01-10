@@ -7,7 +7,6 @@ import Form from '../../components/Form';
 import Hero from '../../components/Hero';
 import Section from '../../components/Section';
 import Title from '../../components/Title';
-import Loader from '../../components/Loader';
 import PageTemplate from '../../templates/Page';
 import Link from 'next/link';
 import { facebookLink, instagramLink, twitterLink } from '../../utils/navLinks';
@@ -23,7 +22,7 @@ const Contact = () => {
 			metaTitle='Contact Vibes DIY Studio Today'
 			metaDescription='Contact Vibes DIY Studio, the Premiere Creative Space located in the Northwest Las Vegas area.'
 		>
-			<Hero title='Contact' bgImg='/contact_bg.png' />
+			<Hero title='Contact' bgImg='/location1.png' />
 			<Section>
 				<Flex
 					justifyContent='space-between'
@@ -112,19 +111,19 @@ const Contact = () => {
 						<Eyebrow color='primary' />
 						<Title h5>Address:</Title>
 						<Text>
-							7557 Norman Rockwell Ln, Bldg 2 Suite 120
+							7557 Norman Rockwell Ln, Suite 120
 							<br />
-							Las Vegas, NV, 89149
+							Las Vegas, NV, 89143
 							<br />
 							Located in The Village of Centennial Springs
 						</Text>
 						<Title h5>Hours:</Title>
 						<Text>
-							Monday - Friday 10am - 6pm
+							Wednesday, Thursday, Sunday: 12pm -
 							<br />
 							Saturday - 10am - 9pm
 							<br />
-							Sunday - Closed
+							Monday & Tuesday - Closed
 						</Text>
 						<Title h5>Phone:</Title>
 						<Text>702.395.3349</Text>
