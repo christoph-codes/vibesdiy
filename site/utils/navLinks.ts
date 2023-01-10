@@ -37,22 +37,16 @@ export const navigationLinks: INavigationProps["links"] = [
 	},
 	{
 		link: {
+			label: "Pricing",
+			path: "/pricing",
+		},
+	},
+	{
+		link: {
 			label: "Gallery",
 			path: "/gallery",
 		},
 	},
-	// {
-	// 	link: {
-	// 		label: "Special Events",
-	// 		path: "/special-events",
-	// 	},
-	// },
-	// {
-	// 	link: {
-	// 		label: "Shop",
-	// 		path: "/shop",
-	// 	},
-	// },
 	{
 		link: {
 			label: "FAQs",

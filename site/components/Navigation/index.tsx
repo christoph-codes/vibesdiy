@@ -35,7 +35,7 @@ const Navigation = ({ links, className }: INavigationProps) => {
 					<Logo className={styles.Navigation__logo} />
 				</Link>
 				<ul className={styles.Navigation__nav}>
-					{links?.map((item, index) => {
+					{links?.slice(1).map((item, index) => {
 						return (
 							<NavLink
 								key={index}

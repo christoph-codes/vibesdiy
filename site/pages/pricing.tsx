@@ -8,6 +8,7 @@ const Pricing = () => {
 		<PageTemplate
 			metaTitle="Pricing for Vibes DIY Studio"
 			metaDescription="The complete price list for Vibes DIY Studio"
+			metaImage="/business_sale.png"
 		>
 			<Hero title="Price List" bgImg="/about_bg.png" />
 			<Section>
