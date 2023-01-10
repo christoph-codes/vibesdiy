@@ -1,18 +1,24 @@
-import { HamburgerIcon } from '@chakra-ui/icons';
-import { Box } from '@chakra-ui/react';
-import Link from 'next/link';
-import { useSideNav } from '../../providers/SidenavProvider';
-import { bookLink, homepagePath } from '../../utils/navLinks';
-import Container from '../Container';
-import Logo from '../Logo';
-import NavLink, { INavLinkProps, ILink } from '../NavLink';
-import styles from './Navigation.module.scss';
+import { HamburgerIcon, Icon } from "@chakra-ui/icons";
+import { Box } from "@chakra-ui/react";
+import Link from "next/link";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { useSideNav } from "../../providers/SidenavProvider";
+import {
+	bookLink,
+	facebookLink,
+	homepagePath,
+	instagramLink,
+} from "../../utils/navLinks";
+import Container from "../Container";
+import Logo from "../Logo";
+import NavLink, { INavLinkProps, ILink } from "../NavLink";
+import styles from "./Navigation.module.scss";
 
 export interface INavigationProps {
 	className?: string;
 	links?: {
 		link: ILink;
-		dropdown?: INavLinkProps['dropdownLinks'];
+		dropdown?: INavLinkProps["dropdownLinks"];
 		cta?: boolean;
 	}[];
 }
@@ -20,7 +26,7 @@ export interface INavigationProps {
 const Navigation = ({ links, className }: INavigationProps) => {
 	const { toggleSideNav } = useSideNav();
 	return (
-		<Box as='nav' className={`${styles.Navigation} ${className || ''}`}>
+		<Box as="nav" className={`${styles.Navigation} ${className || ""}`}>
 			<Container className={styles.Navigation__container}>
 				<Link
 					className={styles.Navigation__logoContainer}
@@ -42,6 +48,12 @@ const Navigation = ({ links, className }: INavigationProps) => {
 							</NavLink>
 						);
 					})}
+					<NavLink href={facebookLink}>
+						<Icon boxSize={8} as={FaFacebook} />
+					</NavLink>
+					<NavLink href={instagramLink}>
+						<Icon boxSize={8} as={FaInstagram} />
+					</NavLink>
 				</ul>
 				<Box className={styles.Navigation__mobileNav}>
 					<NavLink
