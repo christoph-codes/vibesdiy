@@ -112,9 +112,9 @@ const Contact = () => {
 						<Eyebrow color='primary' />
 						<Title h5>Address:</Title>
 						<Text>
-							7557 Norman Rockwell Ln, Bldg 2 Suite 120
+							7557 Norman Rockwell Ln, Suite 120
 							<br />
-							Las Vegas, NV, 89149
+							Las Vegas, NV, 89143
 							<br />
 							Located in The Village of Centennial Springs
 						</Text>
