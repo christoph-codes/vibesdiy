@@ -49,7 +49,7 @@ const Home = () => {
 				>
 					<FlexCard
 						link="/services/paint-pour"
-						bgImage="/pour2.png"
+						bgImage="/pour3.png"
 						cardColor="brand.primary.default"
 					>
 						Paint Pouring
