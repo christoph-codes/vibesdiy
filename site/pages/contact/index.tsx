@@ -120,11 +120,11 @@ const Contact = () => {
 						</Text>
 						<Title h5>Hours:</Title>
 						<Text>
-							Monday - Friday 10am - 6pm
+							Wednesday, Thursday, Sunday: 12pm -
 							<br />
 							Saturday - 10am - 9pm
 							<br />
-							Sunday - Closed
+							Monday & Tuesday - Closed
 						</Text>
 						<Title h5>Phone:</Title>
 						<Text>702.395.3349</Text>
