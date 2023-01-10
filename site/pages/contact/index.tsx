@@ -119,7 +119,7 @@ const Contact = () => {
 						</Text>
 						<Title h5>Hours:</Title>
 						<Text>
-							Wednesday, Thursday, Sunday: 12pm -
+							Wednesday, Thursday, Sunday: 12pm - 7pm
 							<br />
 							Saturday - 10am - 9pm
 							<br />

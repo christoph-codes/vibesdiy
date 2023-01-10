@@ -44,7 +44,6 @@ const Gallery = () => {
 			<Section paddingTop={0}>
 				<Flex gap="24px" gridColumn={4} flexWrap="wrap">
 					{imageList.map((image, index) => {
-						console.log(ratios[index]);
 						return (
 							<Image
 								key={index}
