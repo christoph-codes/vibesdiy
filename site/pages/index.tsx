@@ -141,7 +141,21 @@ const Home = () => {
 					</>
 				}
 			/>
-			{/** FAQs */}
+			<Section bgColor="brand.secondary.light">
+				<Text textAlign="center">
+					For special and private events please contact us via email
+				</Text>
+				<Link href="mailto:create@vibesdiystudio.com">
+					<Title
+						h3
+						textAlign="center"
+						transition="ease-in-out color 0.15s"
+						_hover={{ color: "brand.secondary.default" }}
+					>
+						create@vibesdiystudio.com
+					</Title>
+				</Link>
+			</Section>
 			<Section containerClass={styles.Home__faq}>
 				<Title textAlign="center" marginBottom="48px">
 					FAQs
@@ -157,7 +171,6 @@ const Home = () => {
 					</Button>
 				</Flex>
 			</Section>
-			{/** Instagram */}
 			<Section paddingTop={{ base: 0, md: "64px" }}>
 				<Title textAlign="center" marginBottom={8}>
 					Follow Us On Instagram

@@ -1,4 +1,5 @@
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import Link from "next/link";
 import BookNow from "../../components/BookNow";
 import Button from "../../components/Button";
 import Hero from "../../components/Hero";
@@ -72,10 +73,7 @@ const Services = () => {
 					/>
 				</Flex>
 			</Section>
-			<Section
-				// paddingTop={0}
-				containerClass={`${styles.Services__service}`}
-			>
+			<Section containerClass={`${styles.Services__service}`}>
 				<Flex
 					justifyContent="space-around"
 					alignItems="center"
@@ -106,6 +104,21 @@ const Services = () => {
 						</Button>
 					</Box>
 				</Flex>
+			</Section>
+			<Section bgColor="brand.quad.light">
+				<Text textAlign="center">
+					For special and private events please contact us via email
+				</Text>
+				<Link href="mailto:create@vibesdiystudio.com">
+					<Title
+						h3
+						textAlign="center"
+						transition="ease-in-out color 0.15s"
+						_hover={{ color: "brand.quad.default" }}
+					>
+						create@vibesdiystudio.com
+					</Title>
+				</Link>
 			</Section>
 			<BookNow
 				title="Love it all?"
