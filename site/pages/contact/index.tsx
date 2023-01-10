@@ -23,7 +23,7 @@ const Contact = () => {
 			metaTitle='Contact Vibes DIY Studio Today'
 			metaDescription='Contact Vibes DIY Studio, the Premiere Creative Space located in the Northwest Las Vegas area.'
 		>
-			<Hero title='Contact' bgImg='/contact_bg.png' />
+			<Hero title='Contact' bgImg='/location1.png' />
 			<Section>
 				<Flex
 					justifyContent='space-between'
