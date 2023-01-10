@@ -86,6 +86,8 @@ const Home = () => {
 						href="https://goo.gl/maps/Lr47ZATSsNbsaMXf6"
 					>
 						7575 Norman Rockwell Ln, Suite 120
+						<br />
+						Las Vegas, NV, 89143
 					</Link>
 				</Text>
 				<Button href="/location">Come Visit Us</Button>
