@@ -7,7 +7,6 @@ import Form from '../../components/Form';
 import Hero from '../../components/Hero';
 import Section from '../../components/Section';
 import Title from '../../components/Title';
-import Loader from '../../components/Loader';
 import PageTemplate from '../../templates/Page';
 import Link from 'next/link';
 import { facebookLink, instagramLink, twitterLink } from '../../utils/navLinks';
