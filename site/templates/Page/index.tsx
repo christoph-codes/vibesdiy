@@ -84,7 +84,7 @@ const PageTemplate: FC<PageProps> = ({
 				<meta content={metaDescription} property="og:image:alt" />
 			</Head>
 			<AnnouncementBar>
-				<strong>OPENING SOON!</strong>
+				<strong>NOW OPEN!</strong>
 				<br /> 7575 Norman Rockwell Ln, Suite 120 | 702.395.3349
 			</AnnouncementBar>
 			<Navigation links={navigationLinks} />
