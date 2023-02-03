@@ -35,12 +35,12 @@ export const navigationLinks: INavigationProps["links"] = [
 		// 	},
 		// ],
 	},
-	{
-		link: {
-			label: "Pricing",
-			path: "/pricing",
-		},
-	},
+	// {
+	// 	link: {
+	// 		label: "Pricing",
+	// 		path: "/pricing",
+	// 	},
+	// },
 	{
 		link: {
 			label: "Gallery",
