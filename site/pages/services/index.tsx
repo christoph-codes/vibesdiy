@@ -68,7 +68,7 @@ const Services = () => {
 						</Button>
 					</Box>
 					<Image
-						src="/handpaint2.jpg"
+						src="/handpaint7.png"
 						alt="Hand Painting a Ceramic Pot on a table"
 					/>
 				</Flex>

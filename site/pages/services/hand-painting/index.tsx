@@ -74,14 +74,17 @@ const HandPainting = () => {
 						<Image
 							src="/handpaint6.png"
 							alt="Hand Painting is amazing"
+							objectFit="cover"
 						/>
 						<Image
 							src="/handpaint3.jpg"
 							alt="Hand Painting is amazing"
+							objectFit="cover"
 						/>
 						<Image
-							src="/handpaint2.jpg"
+							src="/handpaint7.png"
 							alt="Hand Painting is amazing"
+							objectFit="cover"
 						/>
 					</Flex>
 					<Button href="/gallery" variant="black-outline">
