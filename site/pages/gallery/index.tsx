@@ -1,10 +1,12 @@
-import { Flex, Image, Text, Box } from "@chakra-ui/react";
+import { Flex, Text, Box } from "@chakra-ui/react";
+import Image from "next/image";
 import Link from "next/link";
-import BookNow from "../components/BookNow";
-import Eyebrow from "../components/Eyebrow";
-import Hero from "../components/Hero";
-import Section from "../components/Section";
-import PageTemplate from "../templates/Page";
+import BookNow from "../../components/BookNow";
+import Eyebrow from "../../components/Eyebrow";
+import Hero from "../../components/Hero";
+import Section from "../../components/Section";
+import PageTemplate from "../../templates/Page";
+import styles from "./Gallery.module.scss";
 
 const Gallery = () => {
 	const imageList = [
@@ -58,23 +60,28 @@ const Gallery = () => {
 				<Flex gap="24px" gridColumn={4} flexWrap="wrap">
 					{imageList.map((image, index) => {
 						return (
-							<Image
+							<Box
 								key={index}
-								src={image}
-								alt="Gallery Image"
-								borderRadius="16px"
+								borderRadius={16}
 								borderWidth={4}
 								borderStyle="solid"
 								borderColor={borderColor[index % 5]}
-								objectFit="cover"
 								flexGrow={1}
 								flexShrink={0}
 								flexBasis={{
 									base: "100%",
 									md: ratios[index % 3],
 								}}
+								position="relative"
 								display="inline-block"
-							/>
+							>
+								<Image
+									src={image}
+									alt="Gallery Image"
+									fill
+									className={styles.Gallery__image}
+								/>
+							</Box>
 						);
 					})}
 				</Flex>
