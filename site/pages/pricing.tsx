@@ -18,7 +18,7 @@ const Pricing = () => {
 				</Text>
 				<Image
 					width="100%"
-					src="/pricing_011524.jpg"
+					src="/pricing_032224.png"
 					alt="Vibes DIY Pricelist"
 				/>
 			</Section>
